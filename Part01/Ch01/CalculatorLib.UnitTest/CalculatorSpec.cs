@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Calculator.UnitTest;
+namespace CalculatorLib.UnitTest;
 
 public class CalculatorSpec
 {

@@ -5,21 +5,21 @@
   - `dotnet new xunit`
   - `dotnet test`
 - 단위 테스트 구현
-  - `Spec`
-  - `[Fact]`
-  - `void`
+  - `Spec` : 테스트 클래스명
+  - `[Fact]` : 테스트 메서드 애트리뷰트
+  - `void` : 테스트 메서드 반환 타입
 - 테스트 성공 & 실패
-  - `성공` : 예외가 없을 때
-  - `실패` : 예외가 있을 때
+  - `성공` : 예외가 **없을** 때
+  - `실패` : 예외가 **있을** 때
 
 ## 명령 요약
 ```shell
 # 프로젝트 구성
 dotnet new sln -n UnitTest
-dotnet new xunit -o Calculator.UnitTest
+dotnet new xunit -o CalculatorLib.UnitTest
 
 # 솔루션 구성
-dotnet sln add .\Calculator.UnitTest
+dotnet sln add .\CalculatorLib.UnitTest
 
 dotnet build
 dotnet test
@@ -81,33 +81,20 @@ public void Failure()
     throw new Exception("단위 테스트 실패는 예외다");
 }
 ```
-- 테스트 성공 : 예외가 없을 때
-  ```cs
-  [Fact]
-  public void Success()
-  {
-      // 예외가 없을 때
-  }
-  ```
-- 테스트 실패 : 예외가 있을 떄
-  ```cs
-  [Fact]
-  public void Failure()
-  {
-      // 예외가 있을 때
-      throw new Exception("단위 테스트 실패는 예외다");
-  }
-  ```
 - 단위 테스트 실행 결과
   ```shell
-  [xUnit.net 00:00:00.56]     Calculator.UnitTest.CalculatorSpec.Failure [FAIL]
-    실패 Calculator.UnitTest.CalculatorSpec.Failure [8 ms]
+  # 테스트 실행
+  dotnet test
+
+  # 테스트 실행 결과
+  [xUnit.net 00:00:00.85]     CalculatorLib.UnitTest.CalculatorSpec.Failure [FAIL]
+    실패 CalculatorLib.UnitTest.CalculatorSpec.Failure [2 ms]
     오류 메시지:
      System.Exception : 단위 테스트 실패는 예외다
     스택 추적:
-       at Calculator.UnitTest.CalculatorSpec.Failure() in C:\Workspace\UnitTest-With\Part01\Ch01\Calculator.UnitTest\CalculatorSpec.cs:line 17
+       at CalculatorLib.UnitTest.CalculatorSpec.Failure() in C:\Workspace\UnitTest-With\Part01\Ch01\CalculatorLib.UnitTest\CalculatorSpec.  cs:line 17
 
-  실패!  - 실패:     1, 통과:     1, 건너뜀:     0, 전체:     2, 기간: 6 ms - Calculator.UnitTest.dll (net6.0)
+  실패!  - 실패:     1, 통과:     1, 건너뜀:     0, 전체:     2, 기간: 6 ms - CalculatorLib.UnitTest.dll (net6.0)
   ```
   - 실패: 1
   - 통과: 1
