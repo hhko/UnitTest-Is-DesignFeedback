@@ -1,7 +1,8 @@
 # UnitTest-With
+## 목표
 단위 테스트 기반으로 설계하고 개발하자
 
-## 목표
+## 목차
 ### Part 1. 개요
 - [x] 단위 테스트 성공 & 실패
 - [x] 단위 테스트 구현 3A 패턴
@@ -24,9 +25,11 @@
 
 ### Part 4. xUnit 패키지
 
-### Part 5. 단위 테스트 설계
+### Part 5. 단위 테스트와 설계
 - [ ] 분리
 - [ ] 의존성 역전
+
+### Part ?. 통합 테스트
 
 ## 참고 자료
 - [ ] [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
