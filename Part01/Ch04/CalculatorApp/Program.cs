@@ -1,4 +1,5 @@
-﻿using CalculatorLib;
+﻿using System;
+using CalculatorLib;
 
 Calculator calculator = new Calculator();
 int result = calculator.Add(1, 6);
