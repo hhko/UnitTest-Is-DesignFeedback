@@ -1,5 +1,6 @@
 # 단위 테스트 격리 실행
 
+`dotnet test --logger "console;verbosity=detailed"`  
 ```shell
 ----- Test Execution Summary -----
 
