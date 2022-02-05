@@ -109,7 +109,6 @@ dotnet test --no-build
 
 // Logger : ITestOutputHelper
 dotnet test --logger "console;verbosity=detailed"
-dotnet test -l "console;v=d"
 
 dotnet test --configuration Release
 dotnet test -c Release
