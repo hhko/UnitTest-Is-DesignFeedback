@@ -4,14 +4,14 @@
 
 ## 목차
 ### Part 0. 개발 환경
-- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet)
-- [Visual Studio Code](https://code.visualstudio.com/download)
+- .NET SDK([링크](https://dotnet.microsoft.com/en-us/download/dotnet))
+- Visual Studio Code([링크](https://code.visualstudio.com/download))
 - Visual Studio Code 확장 도구
   - 프로그래밍 언어
-    - [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+    - C#([링크](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp))
   - 단위 테스트
-    - [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
-    - [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
+    - .NET Core Test Explorer([링크](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer))
+    - Coverage Gutters([링크](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters))
 
 ### Part 1. 단위 테스트
 - [x] Ch01. 단위 테스트 구성([구현](./Part01/Ch01))
