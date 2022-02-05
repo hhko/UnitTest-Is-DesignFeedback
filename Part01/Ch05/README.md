@@ -27,7 +27,6 @@ public class CalculatorSpec
   - `ITestOutputHelper` 인터페이스는 `WriteLine` 메서드를 제공한다.
   - `ITestOutputHelper` 인터페이스 인스턴스는 생성자로 자동으로 주입(전달)된다.
   - `ITestOutputHelper` 인터페이스 출력은 VSCode에서 확인할 수 있다.
-
 - VSCode 출력
   ![](./ITestOutputHelper_VSCode.png)
 - dotnet 출력 : `dotnet test --logger "console;verbosity=detailed"`
