@@ -1,4 +1,4 @@
-# UnitTest-With
+# UnitTest With ...
 ## 목표
 단위 테스트 기반으로 설계하고 개발하자
 
@@ -23,13 +23,13 @@
 - [x] Ch07. 단위 테스트 병렬 실행([구현](./Part01/Ch07))
 - [x] Ch08. 단위 테스트 구현 패턴([구현](./Part01/Ch08))
 - [ ] Ch09. 단위 테스트 Assertion 개선
-- [ ] Ch10. 단위 테스트 Live
 
 ### Part 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
 - [ ] 코드 커버리지 복수 프로젝트 명령
 - [ ] 코드 커버러지 HTML 명령
 - [ ] 코드 커버리지 VSCode 옵션
+- [ ] 코드 커버리지 Live
 
 ### Part 3. GitHub & GitLab CI 통합
 - [ ] GitHub 빌드
@@ -40,10 +40,11 @@
 - [ ] GitLab 코드 커버리지 결과
 
 ### Part 4. xUnit 패키지
-- 기본
-- 외부
-- 동시성 vs. 직렬
-- 순서 실행
+- 내부 N개 입력
+- 외부 N개 입력
+- 데이터 공유
+- 순서 지정
+- 직렬 실행
 - 대기 최대 시간
 
 ### Part 5. 단위 테스트와 설계
@@ -103,10 +104,19 @@
 
 ## dotnet test 명령
 ```
---arch ?
---framework ?
---configuration Release \
---no-restore \
---no-build \
---verbosity=minimal \
+dotnet test
+dotnet test --no-build
+
+// Logger : ITestOutputHelper
+dotnet test --logger "console;verbosity=detailed"
+dotnet test -l "console;v=d"
+
+dotnet test --configuration Release
+dotnet test -c Release
 ```
+- [ ] [dotnet test](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test)
+  ```
+  --arch ?
+  --framework ?
+  --verbosity=minimal
+  ```
