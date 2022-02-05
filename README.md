@@ -3,15 +3,27 @@
 단위 테스트 기반으로 설계하고 개발하자
 
 ## 목차
+### Part 0. 개발 환경
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- Visual Studio Code 확장 도구
+  - 프로그래밍 언어
+    - [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+  - 단위 테스트
+    - [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
+    - [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
+
 ### Part 1. 단위 테스트
-- [ ] Ch01. 단위 테스트란
-- [x] Ch02. 단위 테스트 통과와 실패([구현](./Part01/Ch01))
-- [ ] Ch03. 단위 테스트 개별 실행
-- [x] Ch04. 단위 테스트 3A Pattern([구현](./Part01/Ch03))
-- [ ] Ch05. 단위 테스트 Assertion 개선
-- [ ] Ch06. 단위 테스트 Debugging
-- [ ] Ch07. 단위 테스트 Live
-- [ ] Ch08. 단위 테스트 Best Practice
+- [x] Ch01. 단위 테스트 구성([구현](./Part01/Ch01))
+- [x] Ch02. 단위 테스트 통과와 실패([구현](./Part01/Ch02))
+- [x] Ch03. 단위 테스트 디버깅([구현](./Part01/Ch03))
+- [x] Ch04. 단위 테스트 확장 도구([구현](./Part01/Ch04))
+- [x] Ch05. 단위 테스트 출력([구현](./Part01/Ch05))
+- [x] Ch06. 단위 테스트 격리 실행([구현](./Part01/Ch06))
+- [x] Ch07. 단위 테스트 병렬 실행([구현](./Part01/Ch07))
+- [x] Ch08. 단위 테스트 구현 패턴([구현](./Part01/Ch08))
+- [ ] Ch09. 단위 테스트 Assertion 개선
+- [ ] Ch10. 단위 테스트 Live
 
 ### Part 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
@@ -28,11 +40,17 @@
 - [ ] GitLab 코드 커버리지 결과
 
 ### Part 4. xUnit 패키지
+- 기본
+- 외부
+- 동시성 vs. 직렬
+- 순서 실행
+- 대기 최대 시간
 
 ### Part 5. 단위 테스트와 설계
 - [ ] 분리
 - [ ] 의존성 역전
 - [ ] 아키텍처
+- [ ] 단위 테스트 Best Practice
 
 ### Part ?. 통합 테스트
 
@@ -43,6 +61,17 @@
 - [ ] [Create a GitHub Action with .NET](https://docs.microsoft.com/en-us/dotnet/devops/create-dotnet-github-action)
 - [ ] [.NET Core 및.NET 표준을 사용하는 단위 테스트 모범 사례](https://docs.microsoft.com/ko-kr/dotnet/core/testing/unit-testing-best-practices)
 - [ ] [.NET CLI를 사용하여 프로젝트 구성 및 테스트](https://docs.microsoft.com/ko-kr/dotnet/core/tutorials/testing-with-cli)
+- [ ] [Attribute [CollectionDefinition(DisableParallelization = true)] doesn't prevent parallel execution between class #1999](https://github.com/xunit/xunit/issues/1999#issuecomment-522635397)
+- [ ] [xUnit: Control the Test Execution Order](https://hamidmosalla.com/2018/08/16/xunit-control-the-test-execution-order/)
+- [ ] [Execute unit tests serially (rather than in parallel)](https://www.titanwolf.org/Network/q/3c8bf31e-3cfe-4929-809c-24ac9dbc7fca/y)
+- [ ] [XUnit – Part 8: Using TheoryData Instead of MemberData and ClassData](https://hamidmosalla.com/2020/04/05/xunit-part-8-using-theorydata-instead-of-memberdata-and-classdata/)
+- [ ] [XUnit – Part 7: Categorizing Tests with xUnit Trait](https://hamidmosalla.com/2020/03/01/xunit-part-7-categorizing-tests-with-xunit-trait/)
+- [ ] [XUnit – Part 6: Testing The Database with xUnit Custom Attributes](https://hamidmosalla.com/2020/02/16/xunit-part-6-testing-the-database-with-xunit-custom-attributes/)
+- [ ] [XUnit – Part 5: Share Test Context With IClassFixture and ICollectionFixture](https://hamidmosalla.com/2020/02/02/- [ ] xunit-part-5-share-test-context-with-iclassfixture-and-icollectionfixture/)
+- [ ] [XUnit – Part 4: Parallelism and Custom Test Collections](https://hamidmosalla.com/2020/01/26/xunit-part-4-parallelism-and-custom-test-collections/)
+- [ ] [XUnit – Part 3: Action Based Assertions Assert.Raises and Assert.Throws](https://hamidmosalla.com/2020/01/20/- [ ] xunit-part-3-action-based-assertions-assert-raises-and-assert-throws/)
+- [ ] [XUnit – Part 2: Value and Type Based Assertions in xUnit](https://hamidmosalla.com/2020/01/12/xunit-part-2-value-and-type-based-assertions-in-xunit/)
+- [ ] [XUnit – Part 1: xUnit Packages and Writing Your First Unit Test](https://hamidmosalla.com/2020/01/05/xunit-part-1-xunit-packages-and-writing-your-first-unit-test/)
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
