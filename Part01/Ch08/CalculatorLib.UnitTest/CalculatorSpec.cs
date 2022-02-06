@@ -8,7 +8,7 @@ public class CalculatorSpec
     [Fact]
     public void Test()
     {
-        // Arrange : 입력 확인
+        // Arrange : 입력 준비
         Calculator sut = new Calculator();
 
         // Act : 실행

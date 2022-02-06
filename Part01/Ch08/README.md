@@ -1,10 +1,10 @@
-# 단위 테스트 3A 패턴
+# 단위 테스트 구현 패턴
 
 ## 목표
-- 단위 테스트 3A 패턴 구현하기
-  - 입력 준비 : `Arrange`
-  - 실행 : `Act`
-  - 출력 확인 : `Assert`
+- 단위 테스트 구현 패턴 : `3A`
+  - 입력 준비 : `A`rrange
+  - 실행 : `A`ct
+  - 출력 확인 : `A`ssert
 
 ## 명령 요약
 ```shell
@@ -25,7 +25,7 @@ dotnet run --project .\CalculatorApp
 
 # 솔로션 테스트 실행
 dotnet test
-dotnet test --no-build --no-restore
+dotnet test --no-build
 ```
 
 ## 테스트 구현
@@ -38,7 +38,7 @@ public class CalculatorSpec
     [Fact]
     public void Test()
     {
-        // Arrange : 입력 확인
+        // Arrange : 입력 준비
         Calculator sut = new Calculator();
 
         // Act : 실행
@@ -55,7 +55,7 @@ public class CalculatorSpec
     [Fact]
     public void Test()
     {
-        // Arrange : 입력 확인
+        // Arrange : 입력 준비
 
         // Act : 실행
 
