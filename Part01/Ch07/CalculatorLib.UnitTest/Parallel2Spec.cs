@@ -1,5 +1,5 @@
-using System.Threading;
 using Xunit;
+using System.Threading;
 
 namespace CalculatorLib.UnitTest;
 
