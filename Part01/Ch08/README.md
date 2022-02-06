@@ -49,16 +49,16 @@ public class CalculatorSpec
     }
 }
 ```
-- 테스트 메서드 구현
-  - 예
-    ```cs
-    [Fact]
-    public void Test()
-    {
-        // Arrange : 입력 준비
 
-        // Act : 실행
+## 3A 패턴 템플릿
+```cs
+[Fact]
+public void Test()
+{
+    // Arrange : 입력 준비
 
-        // Assert : 출력 확인
-    }
-    ```
+    // Act : 실행
+      
+    // Assert : 출력 확인
+}
+```
