@@ -22,7 +22,7 @@
 - [x] Ch06. 단위 테스트 격리 실행([구현](./Part01/Ch06))
 - [x] Ch07. 단위 테스트 병렬 실행([구현](./Part01/Ch07))
 - [x] Ch08. 단위 테스트 구현 패턴([구현](./Part01/Ch08))
-- [ ] Ch09. 단위 테스트 Assertion 개선
+- [x] Ch09. 단위 테스트 Assertion 개선([구현](./Part01/Ch09))
 
 ### Part 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
@@ -39,7 +39,7 @@
 - [ ] GitLab 코드 커버리지
 - [ ] GitLab 코드 커버리지 결과
 
-### Part 4. xUnit 패키지
+### Part 4. 단위 테스트 패키지 xUnit
 - 내부 N개 입력
 - 외부 N개 입력
 - 데이터 공유
@@ -47,15 +47,24 @@
 - 직렬 실행
 - 대기 최대 시간
 
-### Part 5. 단위 테스트와 설계
+### Part 5. Assertion 패키지 Fluent Assertions
+
+### Part 6. Arrange 패키지 AutoFixture
+
+### Part 7. 의존성 패키지 Moq
+
+### Part 8. Architecture 패키지 ArchiUnitNET
+
+### Part ?. 단위 테스트와 설계
 - [ ] 분리
 - [ ] 의존성 역전
 - [ ] 아키텍처
 - [ ] 단위 테스트 Best Practice
 
-### Part ?. 통합 테스트
-
 ### Part ?. 예제
+- Tic Tac Toe
+- Tetris
+- ...
 
 ## 참고 자료
 - [ ] [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
@@ -86,11 +95,12 @@
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
-- [ ] 단위 테스트 | Fluent Assertions
+- [x] 단위 테스트 | Fluent Assertions
+- [ ] 단위 테스트 | AutoFixture
 - [ ] 단위 테스트 | ApprovalTests.Net
+- [ ] 단위 테스트 | Moq
+- [ ] 단위 테스트 | ArchiUnitNET
 ---
-- [ ] 설계 | Moq
-- [ ] 설계 | ArchiUnitNET
 - [ ] 데이터 | Bogus
 - [ ] 로그 | Serilog.Sinks.InMemory
 ---
