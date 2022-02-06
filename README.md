@@ -1,7 +1,6 @@
 # 단위 테스트
 ## 목표
-- 단위 테스트 가능한 설계를 이해한다.
-- 단위 테스트 필수 패키지를 이해한다.
+- 지속 성장 가능한 설계를 구현하고 검증할 수 있다.
 
 ## 목차
 ### Part 0. 개발 환경
@@ -51,15 +50,13 @@
 - 직렬 실행
 - 대기 최대 시간
 
-### Part 5. Assertion 패키지 Fluent Assertions
+### Part 5. 단위 테스트 Arrange 패키지 AutoFixture
 
-### Part 6. Arrange 패키지 AutoFixture
+### Part 6. 단위 테스트 Architecture 패키지 ArchiUnitNET
 
-### Part 7. 의존성 패키지 Moq
+---
 
-### Part 8. Architecture 패키지 ArchiUnitNET
-
-### Part ?. 단위 테스트와 설계
+### Part ?. 성장 가능한 설계
 - [ ] 분리
 - [ ] 의존성 역전
 - [ ] 아키텍처
