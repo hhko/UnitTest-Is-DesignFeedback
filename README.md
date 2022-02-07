@@ -56,16 +56,24 @@
 
 ---
 
-### Part ?. 성장 가능한 설계
+### Part ?. 설계
 - [ ] 분리
 - [ ] 의존성 역전
 - [ ] 아키텍처
 - [ ] 단위 테스트 Best Practice
 
+### Part ?. 클린 아키텍처
+
+### Part ?. 도메인 주도 설계
+
+---
+
 ### Part ?. 예제
 - Tic Tac Toe
 - Tetris
 - ...
+
+<br/>
 
 ## 참고 자료
 - [ ] [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
