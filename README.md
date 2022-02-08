@@ -65,16 +65,12 @@
 #### Chapter ?. 설계 원칙
 - [ ] 역할과 책임
 - [ ] 분리
-- [ ] 의존성 역전
 - [ ] 협력
+- [ ] 의존성 역전
+- [ ] 의존성 주입
 - [ ] 단위 테스트 Best Practice
 
 #### Chapter ?. 도메인 주도 설계
-- [ ] Value 객체
-- [ ] Entity
-- [ ] Service
-- [ ] Repository
-- [ ] Factory
 
 #### Chapter ?. 클린 아키텍처
 
