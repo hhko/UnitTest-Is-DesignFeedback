@@ -57,12 +57,18 @@
 ---
 
 ### Part ?. 설계
+- [ ] 역할과 책임
 - [ ] 분리
 - [ ] 의존성 역전
-- [ ] 아키텍처
+- [ ] 협력
 - [ ] 단위 테스트 Best Practice
 
 ### Part ?. 도메인 주도 설계
+- [ ] Value 객체
+- [ ] Entity
+- [ ] Service
+- [ ] Repository
+- [ ] Factory
 
 ### Part ?. 클린 아키텍처
 
