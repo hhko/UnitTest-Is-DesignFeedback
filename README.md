@@ -3,7 +3,7 @@
 - 지속 가능한 성장을 위한 **설계를** 구현하고 검증할 수 있다.
 
 ## 목차
-### Part 0. 개발 환경
+### Part 0. 개발 환경 구축하기
 - .NET SDK([링크](https://dotnet.microsoft.com/en-us/download/dotnet))
 - Visual Studio Code([링크](https://code.visualstudio.com/download))
 - Visual Studio Code 확장 도구
@@ -13,25 +13,26 @@
     - .NET Core Test Explorer([링크](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer))
     - Coverage Gutters([링크](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters))
 
-### Part 1. 단위 테스트
-- [x] Ch01. 단위 테스트 구성([구현](./Part01/Ch01))
-- [x] Ch02. 단위 테스트 성공과 실패([구현](./Part01/Ch02))
-- [x] Ch03. 단위 테스트 디버깅([구현](./Part01/Ch03))
-- [x] Ch04. 단위 테스트 확장 도구([구현](./Part01/Ch04))
-- [x] Ch05. 단위 테스트 출력([구현](./Part01/Ch05))
-- [x] Ch06. 단위 테스트 격리 실행([구현](./Part01/Ch06))
-- [x] Ch07. 단위 테스트 병렬 실행([구현](./Part01/Ch07))
-- [x] Ch08. 단위 테스트 구현 패턴([구현](./Part01/Ch08))
-- [x] Ch09. 단위 테스트 Assertion 개선([구현](./Part01/Ch09))
+### Part 1. 단위 테스트 기초 다지기
+#### Chapter 1. 단위 테스트
+- [x] Step 01. 단위 테스트 구성([구현](./Part01/Ch01/Step01/))
+- [x] Step 02. 단위 테스트 성공과 실패([구현](./Part01/Ch01/Step02/))
+- [x] Step 03. 단위 테스트 디버깅([구현](./Part01/Ch01/Step03/))
+- [x] Step 04. 단위 테스트 확장 도구([구현](./Part01/Ch01/Step04/))
+- [x] Step 05. 단위 테스트 출력([구현](./Part01/Ch01/Step05/))
+- [x] Step 06. 단위 테스트 격리 실행([구현](./Part01/Ch01/Step06/))
+- [x] Step 07. 단위 테스트 병렬 실행([구현](./Part01/Ch01/Step07/))
+- [x] Step 08. 단위 테스트 구현 패턴([구현](./Part01/Ch01/Step08/))
+- [x] Step 09. 단위 테스트 Fluent Assertion([구현](./Part01/Ch01/Step09/))
 
-### Part 2. 코드 커버리지
+#### Chapter 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
 - [ ] 코드 커버리지 복수 프로젝트 명령
 - [ ] 코드 커버러지 HTML 명령
 - [ ] 코드 커버리지 VSCode 옵션
 - [ ] 코드 커버리지 Live
 
-### Part 3. GitHub & GitLab CI 통합
+#### Chapter 3. GitHub & GitLab CI 통합
 - [ ] GitHub 빌드
 - [ ] GitHub 코드 커버리지
 - [ ] GitHub 코드 커러비리 결과
@@ -41,7 +42,8 @@
 
 ---
 
-### Part 4. 단위 테스트 패키지 xUnit
+### Part 2. 단위 테스트 패키지 이해하기
+#### Chapter 4. 단위 테스트 패키지 xUnit
 - 설정
 - 내부 N개 입력
 - 외부 N개 입력
@@ -50,34 +52,39 @@
 - 직렬 실행
 - 대기 최대 시간
 
-### Part 5. 단위 테스트 Arrange 패키지 AutoFixture
+#### Chapter 5. 단위 테스트 Arrange 패키지 AutoFixture
 
-### Part 6. 단위 테스트 Architecture 패키지 ArchiUnitNET
+#### Chapter 6. 단위 테스트 Architecture 패키지 ArchiUnitNET
+
+#### Chapter 7. 단위 테스트 Container 패키지 DotNet.Testcontainers
 
 ---
 
-### Part ?. 설계
+### Part 3. 단위 테스트와 설계
+
+#### Chapter ?. 설계 원칙
 - [ ] 역할과 책임
 - [ ] 분리
 - [ ] 의존성 역전
 - [ ] 협력
 - [ ] 단위 테스트 Best Practice
 
-### Part ?. 도메인 주도 설계
+#### Chapter ?. 도메인 주도 설계
 - [ ] Value 객체
 - [ ] Entity
 - [ ] Service
 - [ ] Repository
 - [ ] Factory
 
-### Part ?. 클린 아키텍처
+#### Chapter ?. 클린 아키텍처
 
 ---
 
-### Part ?. 예제
-- Tic Tac Toe
-- Tetris
-- ...
+### Part 4. 프로젝트
+
+#### Chapter ?. Tic Tac Toe
+#### Chapter ?. Tetris
+#### Chapter ?. ?
 
 <br/>
 
@@ -115,6 +122,7 @@
 - [ ] 단위 테스트 | ApprovalTests.Net
 - [ ] 단위 테스트 | Moq
 - [ ] 단위 테스트 | ArchiUnitNET
+- [ ] 컨테이너 | DotNet.Testcontainers
 ---
 - [ ] 데이터 | Bogus
 - [ ] 로그 | Serilog.Sinks.InMemory
