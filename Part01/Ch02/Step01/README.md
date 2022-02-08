@@ -80,7 +80,7 @@ dotnet test `
 	/p:CollectCoverage=true  `
 	/p:CoverletOutput=./TestResults/Coverage/ `
 	/p:CoverletOutputFormat=lcov%2copencover%2cjson%2ccobertura `
-    /p:Exclude="[xunit.*]*
+        /p:Exclude="[xunit.*]*
 ```
 
 ## 단위 테스트 실행 : 통합 코드 커버리지
@@ -136,8 +136,9 @@ reportgenerator `
 	-reporttypes:Cobertura
 ```
 
-| 구분             | 개별 | 통합 | 옵션 |
-|-----------------|------|------|------|
-| dotnet test     | 완료 | TODO? | 네임스페이스 제외?, 코드 제외? |
-| reportgenerator | -    | 완료 | |
-| VSCode          | 완료 | -    | |
+| 구분                 | 개별 | 통합 | 옵션 |
+|----------------------|------|------|------|
+| dotnet test          | 완료 | TODO? | 네임스페이스 제외?, 코드 제외? |
+| reportgenerator      | -    | 완료 | |
+| VSCode CodeCoverage  | 완료 | -    | |
+| VSCode Test Explorer | 
