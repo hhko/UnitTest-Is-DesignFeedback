@@ -141,4 +141,8 @@ reportgenerator `
 | dotnet test          | 완료 | TODO? | 네임스페이스 제외?, 코드 제외? |
 | reportgenerator      | -    | 완료 | |
 | VSCode CodeCoverage  | 완료 | -    | |
-| VSCode Test Explorer | 
+| VSCode Test Explorer | TODO? | TODO? | TODO? |
+
+- TODO?
+
+
