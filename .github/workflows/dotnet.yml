@@ -55,7 +55,6 @@ jobs:
             --results-directory "${{ github.workspace }}/TestResults" \
             /p:CollectCoverage=true \
             /p:CoverletOutputFormat=opencover
-            - name: Display Current Directory
       - name: Display Outputs
         run: |
           ls "${{ github.workspace }}/TestResults" -l
