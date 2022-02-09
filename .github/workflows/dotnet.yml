@@ -52,7 +52,11 @@ jobs:
             --framework ${{ matrix.framework }} \
             --logger "console;verbosity=detailed" \
             --logger "trx;LogFilePrefix=${{ matrix.prefix }}" \
-            --logger "GitHubActions;report-warnings=false" \
             --results-directory "${{ github.workspace }}/TestResults" \
             /p:CollectCoverage=true \
             /p:CoverletOutputFormat=opencover
+            - name: Display Current Directory
+      - name: Display Outputs
+        run: |
+          ls "${{ github.workspace }}/TestResults" -l
+          
