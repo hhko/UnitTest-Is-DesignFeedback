@@ -58,4 +58,7 @@ jobs:
       - name: Display Outputs
         run: |
           ls "${{ github.workspace }}/TestResults" -l
-          
+      - name: Upload test coverage
+        uses: codecov/codecov-action@v1
+        with:
+          flags: ${{ matrix.framework }}
