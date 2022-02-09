@@ -37,17 +37,23 @@ jobs:
       - name: Install Packages
         run: dotnet restore ./Part01/Ch02/Step01/MultipleUnitTests.sln
       - name: Build
-        run: dotnet build ./Part01/Ch02/Step01/MultipleUnitTests.sln -c Release --no-restore
-      - name: Test
         run: |
-           dotnet test ./Part01/Ch02/Step01/MultipleUnitTests.sln \
-             -c Release \
-             --no-build \
-             --verbosity normal \
-             --framework ${{ matrix.framework }} \
-             --logger "console;verbosity=detailed" \
-             --logger "trx;LogFilePrefix=${{ matrix.prefix }}" \
-             --results-directory "${{ github.workspace }}/TestResults" \
-             /p:CollectCoverage=true \
-             /p:CoverletOutput=./TestResults/Coverage/ \
-             /p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover
+          dotnet build ./Part01/Ch02/Step01/MultipleUnitTests.sln \
+            -c Release \
+            --no-restore \
+            /p:GITHUB_ACTIONS=false
+      - name: Test
+        continue-on-error: true # proceed if tests fail, the report step will report the failure with more details.
+        run: |
+          dotnet test ./Part01/Ch02/Step01/MultipleUnitTests.sln \
+            -c Release \
+            --no-build \
+            --verbosity normal \
+            --framework ${{ matrix.framework }} \
+            --logger "console;verbosity=detailed" \
+            --logger "trx;LogFilePrefix=${{ matrix.prefix }}" \
+            --results-directory "${{ github.workspace }}/TestResults" \
+            /p:CollectCoverage=true \
+            /p:CoverletOutput=./TestResults/Coverage/ \
+            /p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover \
+            /p:GITHUB_ACTIONS=false
