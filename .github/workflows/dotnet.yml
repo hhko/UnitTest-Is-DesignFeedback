@@ -12,8 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        #dotnet-version: ['3.0', '3.1.x', '5.0.x' ]
-        dotnet-version: [ '6.0.x' ]
+        dotnet-version: [ '6.0']
+        include:
+        - dotnet-version: '6.0'
+          install-3: false
+          install-5: false
+          display-name: '.NET 6.0'
+          framework: 'net6'
+          prefix: 'net6'
 
     steps:
       - uses: actions/checkout@v2
@@ -24,10 +30,24 @@ jobs:
       - name: Display dotnet Version
         run: dotnet --version
       - name: Display Current Directory
-        run: pwd
+        run: |
+          pwd
+          cd "${{ github.workspace }}/"
+          pwd
       - name: Install Packages
         run: dotnet restore ./Part01/Ch02/Step01/MultipleUnitTests.sln
       - name: Build
         run: dotnet build ./Part01/Ch02/Step01/MultipleUnitTests.sln -c Release --no-restore
       - name: Test
-        run: dotnet test ./Part01/Ch02/Step01/MultipleUnitTests.sln -c Release --no-build --verbosity normal --logger "console;verbosity=detailed" /p:CollectCoverage=true /p:CoverletOutput=./TestResults/Coverage/ /p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover
+        run: |
+           dotnet test ./Part01/Ch02/Step01/MultipleUnitTests.sln \
+             -c Release \
+             --no-build \
+             --verbosity normal \
+             --framework ${{ matrix.framework }} \
+             --logger "console;verbosity=detailed" \
+             --logger "trx;LogFilePrefix=${{ matrix.prefix }}" \
+             --results-directory "${{ github.workspace }}/TestResults" \
+             /p:CollectCoverage=true \
+             /p:CoverletOutput=./TestResults/Coverage/ \
+             /p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover
