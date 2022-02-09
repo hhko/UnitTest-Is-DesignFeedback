@@ -171,8 +171,8 @@ reportgenerator `
             "args": [
                 "test",
                 "/p:CollectCoverage=true",
-	            "/p:CoverletOutput=./TestResults/Coverage/",
-	            "/p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover"
+	        "/p:CoverletOutput=./TestResults/Coverage/",
+	        "/p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover"
             ],
             "problemMatcher": "$msCompile"
         }
