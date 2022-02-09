@@ -12,18 +12,20 @@
   - 단위 테스트
     - .NET Core Test Explorer([링크](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer))
     - Coverage Gutters([링크](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters))
+    - Cucumber (Gherkin) Full Support([링크](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete))
 
 ### Part 1. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
 - [x] Step 01. 단위 테스트 구성([구현](./Part01/Ch01/Step01/))
-- [x] Step 02. 단위 테스트 성공과 실패([구현](./Part01/Ch01/Step02/))
-- [x] Step 03. 단위 테스트 디버깅([구현](./Part01/Ch01/Step03/))
-- [x] Step 04. 단위 테스트 확장 도구([구현](./Part01/Ch01/Step04/))
-- [x] Step 05. 단위 테스트 출력([구현](./Part01/Ch01/Step05/))
-- [x] Step 06. 단위 테스트 격리 실행([구현](./Part01/Ch01/Step06/))
-- [x] Step 07. 단위 테스트 병렬 실행([구현](./Part01/Ch01/Step07/))
-- [x] Step 08. 단위 테스트 구현 패턴([구현](./Part01/Ch01/Step08/))
-- [x] Step 09. 단위 테스트 Fluent Assertion([구현](./Part01/Ch01/Step09/))
+- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part01/Ch01/Step02/))
+- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part01/Ch01/Step03/))
+- [x] Step 04. 단위 테스트 디버깅([구현](./Part01/Ch01/Step04/))
+- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part01/Ch01/Step05/))
+- [x] Step 06. 단위 테스트 출력([구현](./Part01/Ch01/Step06/))
+- [x] Step 07. 단위 테스트 격리 실행([구현](./Part01/Ch01/Step07/))
+- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part01/Ch01/Step08/))
+- [x] Step 09. 단위 테스트 구현 패턴([구현](./Part01/Ch01/Step09/))
+- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part01/Ch01/Step10/))
 
 #### Chapter 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
@@ -45,27 +47,29 @@
 ### Part 2. 단위 테스트 패키지 이해하기
 #### Chapter 4. 단위 테스트 패키지 xUnit
 - 설정
+- Lifecycle
 - 내부 N개 입력
 - 외부 N개 입력
 - 데이터 공유
 - 순서 지정
 - 직렬 실행
 - 대기 최대 시간
+- xUnit 인터페이스
 
-#### Chapter 5. 단위 테스트 Arrange 패키지 AutoFixture
+#### Chapter 5. Arrange 단위 테스트 패키지 AutoFixture
 
-#### Chapter 6. 단위 테스트 Architecture 패키지 ArchiUnitNET
+#### Chapter 6. Architecture 단위 테스트 패키지 ArchiUnitNET
 
-#### Chapter 7. 단위 테스트 Container 패키지 DotNet.Testcontainers
+#### Chapter 7. Container 단위 테스트 패키지 DotNet.Testcontainers
+
+#### Chapter 8. Performance 단위 테스트 패키지 NBench
 
 ---
 
-### Part 3. 단위 테스트와 설계
-
+### Part 3. 단위 테스트와 함께 설계하기
 #### Chapter ?. 설계 원칙
-- [ ] 역할과 책임
-- [ ] 분리
-- [ ] 협력
+- [ ] 분리(역할과 책임)
+- [ ] 의존성(협력)
 - [ ] 의존성 역전
 - [ ] 의존성 주입
 - [ ] 단위 테스트 Best Practice
@@ -76,15 +80,21 @@
 
 ---
 
-### Part 4. 프로젝트
+### Part ?. 행위 주도 단위 테스트
 
+---
+
+### Part ?. 프로젝트
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris
-#### Chapter ?. ?
+#### Chapter ?. eShop
+#### Chaprer ?. ?
 
 <br/>
 
 ## 참고 자료
+- [ ] [Testing .NET Core Apps with Visual Studio Code](https://www.pluralsight.com/guides/testing-.net-core-apps-with-visual-studio-code)
+- [ ] [.NET Core Application Development in Visual Studio Code (VS Code)](https://www.dotnetcurry.com/visualstudio/1451/dotnet-core-development-vs-code)
 - [ ] [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
 - [ ] [Create a GitHub Action with .NET](https://docs.microsoft.com/en-us/dotnet/devops/create-dotnet-github-action)
 - [ ] [.NET Core 및.NET 표준을 사용하는 단위 테스트 모범 사례](https://docs.microsoft.com/ko-kr/dotnet/core/testing/unit-testing-best-practices)
@@ -92,6 +102,11 @@
 - [ ] [Attribute [CollectionDefinition(DisableParallelization = true)] doesn't prevent parallel execution between class #1999](https://github.com/xunit/xunit/issues/1999#issuecomment-522635397)
 - [ ] [xUnit: Control the Test Execution Order](https://hamidmosalla.com/2018/08/16/xunit-control-the-test-execution-order/)
 - [ ] [Execute unit tests serially (rather than in parallel)](https://www.titanwolf.org/Network/q/3c8bf31e-3cfe-4929-809c-24ac9dbc7fca/y)
+- [ ] [.NET Core Application Development in Visual Studio Code (VS Code)](https://www.dotnetcurry.com/visualstudio/1451/dotnet-core-development-vs-code)
+- [ ] [Coverage Reporting for C# Projects](https://fgimian.github.io/coverage-reporting-for-c-sharp-projects/)
+- [ ] GitHub CI : [Level up your .NET libraries](https://benfoster.io/blog/level-up-your-dotnet-libraries/)
+- [ ] MergeWith : [Setting up code coverage with .Net, xUnit and TeamCity for a solution with multiple test projects](https://medium.com/@justingoldberg_2282/setting-up-code-coverage-with-net-xunit-and-teamcity-for-a-solution-with-multiple-test-projects-5d0986db788b)
+- [ ] dotnet tes --logger 복수개 : [Code coverage reports for ASP.NET Core](https://gunnarpeipman.com/aspnet-core-code-coverage/)
 - xUnit Document
   - [ ] [Getting Started with xUnit.net, Using .NET Core with the .NET SDK command line](https://xunit.net/docs/getting-started/netcore/cmdline)
   - [ ] [Getting Started with xUnit.net, Using .NET Core with Visual Studio](https://xunit.net/docs/getting-started/netcore/visual-studio)
@@ -113,12 +128,20 @@
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
+  - [ ] [xRetry](https://github.com/JoshKeegan/xRetry)
 - [x] 단위 테스트 | Fluent Assertions
 - [ ] 단위 테스트 | AutoFixture
-- [ ] 단위 테스트 | ApprovalTests.Net
-- [ ] 단위 테스트 | Moq
 - [ ] 단위 테스트 | ArchiUnitNET
 - [ ] 컨테이너 | DotNet.Testcontainers
+- [ ] 성능 | NBench
+---
+- [ ] 단위 테스트 | Moq
+- [ ] 단위 테스트 | ApprovalTests.Net
+---
+- [ ] BDD | Xunit.Gherkin.Quick
+- [ ] BDD | SpecFlow
+- [ ] BDD | TickSpec
+- [ ] BDD | LightBDD
 ---
 - [ ] 데이터 | Bogus
 - [ ] 로그 | Serilog.Sinks.InMemory
@@ -127,7 +150,6 @@
 - [ ] 웹 | bUnit
 - [ ] 성능 | NBomber
 - [ ] 성능 | siege
-- [ ] 성능 | NBench
 - [ ] 데이터베이스 | Respawn
 - [ ] 데이터베이스 | EFCore?
 

@@ -1,14 +1,33 @@
-# 단위 테스트 격리 실행
+# 단위 테스트 출력
 
-![](IsolatedRun.png)
+```cs
+using Xunit;
+using Xunit.Abstractions;
 
-- `dotnet test --logger "console;verbosity=detailed"`
-- 모든 단위 테스트 메서드는 새 인스턴스에서 실행한다.
-  - "단위 테스트 클래스 인스턴스 : 단위 테스트 메서드 = 1 : 1" 관계를 갖는다.
-  - 단위 테스트 메서드는 서로 독립된(격리된 : 독립된 인스턴스) 인스턴스로 실행한다.
-- VSCode 모든 단위 테스트 실행하기 : CodeLens
-  ![](./CodeLens.png)
-  - settings.json 파일 : `"editor.codeLens": true,`
-- VSCode 모든 단위 테스트 실행하기 : ContextMenu
-  ![](./ContextMenu.png)
+public class CalculatorSpec
+{
+    // 단위 테스트 출력 인터페이스
+    private readonly ITestOutputHelper _output;
 
+    // xUnit이 ITestOutputHelper을 생성자에게 자동으로 주입(전달)한다.
+    public CalculatorSpec(ITestOutputHelper output)
+    {
+        _output = output;
+        _output.WriteLine($"Constructor");
+    }
+
+    [Fact]
+    public void Success()
+    {
+        _output.WriteLine($"Success");
+    }
+}
+```
+- 단위 테스트 출력은 `ITestOutputHelper` 인터페이스를 사용한다.
+  - `ITestOutputHelper` 인터페이스는 `WriteLine` 메서드를 제공한다.
+  - `ITestOutputHelper` 인터페이스 인스턴스는 생성자로 자동으로 주입(전달)된다.
+  - `ITestOutputHelper` 인터페이스 출력은 VSCode에서 확인할 수 있다.
+- VSCode 출력
+  ![](./ITestOutputHelper_VSCode.png)
+- dotnet 출력 : `dotnet test --logger "console;verbosity=detailed"`
+  ![](./ITestOutputHelper_Console.png)

@@ -16,8 +16,14 @@ public class CalculatorSpec
     }
 
     [Fact]
-    public void Success()
+    public void Test1()
     {
-        _output.WriteLine($"Success");
+        _output.WriteLine($"Test1");
+    }
+
+    [Fact]
+    public void Test2()
+    {
+        _output.WriteLine($"Test2");
     }
 }
