@@ -18,8 +18,8 @@ jobs:
           install-3: false
           install-5: false
           display-name: '.NET 6.0'
-          framework: 'net6'
-          prefix: 'net6'
+          framework: 'net6.0'
+          prefix: 'net6.0'
 
     steps:
       - uses: actions/checkout@v2
