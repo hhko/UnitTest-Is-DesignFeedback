@@ -8,7 +8,8 @@
     "type": "process",
     "args": [
         "test"
-    ]
+    ],
+    "problemMatcher": "$msCompile"
 }
 ```
 ![](./TasksJson.png)

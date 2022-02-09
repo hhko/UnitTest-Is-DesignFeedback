@@ -2,6 +2,13 @@
 
 public class Class1
 {
-    public int Method() =>
-        2022;
+    public void DoSomething()
+    {
+
+    }
+
+    public int Method()
+    {
+        return 2022;
+    }
 }

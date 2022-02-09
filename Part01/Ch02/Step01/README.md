@@ -7,6 +7,15 @@
 | cobertura | coverage.cobertura.xml |
 | opencover | coverage.opencover.xml |
 
+
+    <!-- "coverage-gutters.coverageFileNames": [
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "jacoco.xml",
+        "coverage.info"
+    ], -->
+
 - **개별** 단위 테스트 결과 파일을 생성한다.
 - **통합** 코드 커버리지 파일을 생성한다.
 
@@ -136,15 +145,65 @@ reportgenerator `
 	-reporttypes:Cobertura
 ```
 
-| 구분                 | 개별 | 통합 | 옵션 |
-|----------------------|------|------|------|
+| 구분                 | 개별 | 통합   | 옵션 |
+|----------------------|------|-------|------|
 | dotnet test          | 완료 | TODO? | 네임스페이스 제외?, 코드 제외? |
-| reportgenerator      | -    | 완료 | |
-| VSCode CodeCoverage  | 완료 | -    | |
-| VSCode Test Explorer | TODO? | TODO? | TODO? |
-| VSCode tasks.json    | -     | TODO? | 단축키? |
+| reportgenerator      | -    | 완료  |   |
+| VSCode CodeCoverage  | 완료 | -     | 파일명 완료  |
+| VSCode Test Explorer | 완료 | 완료   |   |
+| VSCode tasks.json    | -     | 완료 | 단축키 완료   |
 
-- TODO?
-- 
+- 결과 폴더 지우기(clear) : `TestResults`
+  - `dotnet test`
+  - `reportgenerator`
 
+### VSCode Settings
 
+#### `tasks.json`
+```json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "/p:CollectCoverage=true",
+	            "/p:CoverletOutput=./TestResults/Coverage/",
+	            "/p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+```
+
+#### `keybindings.json`
+```json
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "test"
+    }
+]
+```
+
+#### `settings.json`
+```json
+"dotnet-test-explorer.testArguments": "/p:CollectCoverage=true /p:CoverletOutput=./TestResults/Coverage/ /p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover",
+"dotnet-test-explorer.testProjectPath": "**\\*.UnitTest.csproj",
+"dotnet-test-explorer.treeMode": "merged",
+
+"coverage-gutters.showGutterCoverage": true,
+"coverage-gutters.showLineCoverage": true,
+"coverage-gutters.showRulerCoverage": true,
+"coverage-gutters.coverageFileNames": [
+	"lcov.info",
+	"cov.xml",
+	"coverage.xml",
+	"jacoco.xml",
+	"coverage.info"
+],
+```

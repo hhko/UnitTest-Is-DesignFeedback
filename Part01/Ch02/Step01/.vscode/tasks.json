@@ -6,7 +6,10 @@
             "command": "dotnet",
             "type": "process",
             "args": [
-                "test"
+                "test",
+                "/p:CollectCoverage=true",
+	            "/p:CoverletOutput=./TestResults/Coverage/",
+	            "/p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -16,7 +19,6 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ClassLibrary1.UnitTest/ClassLibrary1.UnitTest.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
