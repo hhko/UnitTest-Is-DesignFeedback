@@ -21,6 +21,10 @@ jobs:
         uses: actions/setup-dotnet@v1.7.2
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Shell
+        run: |
+          pwd
+          ls -l
       - name: Install Packages
         run: dotnet restore ./Part01/Ch02/Step01/MultipleUnitTests.sln
       - name: Build
