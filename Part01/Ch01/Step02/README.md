@@ -12,21 +12,22 @@
     "problemMatcher": "$msCompile"
 }
 ```
-![](./TasksJson.png)
+<img src="./TasksJson.png" width=50%/>
 
 - `tasks.json` 파일
 - `dotnet test` : 모든 단위 테스트 프로젝트 실행
 
 ### 단축키 생성
-![](./RunTaskShortcut.png)
-![](./RunTaskShortcut_Mapping.png)
+<img src="./RunTaskShortcut.png" width=80%/>
+<img src="./RunTaskShortcut_Mapping.png" width=80%/>
 - Open Keyboard Shortcuts : Ctrl + K + S
   - Tasks: Run Task
     - `+`
     - 단축키 생성
 
 ### 단축키와 Task 연결
-![](./RunTaskShortcut_Args.png)
+<img src="./RunTaskShortcut_Args.png" width=60%/>
+
 ```json
 // Place your key bindings in this file to override the defaultsauto[]
 [
