@@ -142,7 +142,9 @@ reportgenerator `
 | reportgenerator      | -    | 완료 | |
 | VSCode CodeCoverage  | 완료 | -    | |
 | VSCode Test Explorer | TODO? | TODO? | TODO? |
+| VSCode tasks.json    | -     | TODO? | 단축키? |
 
 - TODO?
+- 
 
 
