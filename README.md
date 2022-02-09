@@ -1,6 +1,6 @@
 # 단위 테스트와!
 
-[![Build Status](https://github.com/hhko/With-UnitTest/workflows/build/badge.svg)](https://github.com/hhko/With-UnitTest/actions?workflow=Build)
+[![Build Status](https://github.com/hhko/With-UnitTest/workflows/Build/badge.svg)](https://github.com/hhko/With-UnitTest/actions?workflow=Build)
 
 ## 목표
 - 지속 가능한 성장을 위한 **설계를** 구현하고 검증할 수 있다.
