@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/ClassLibrary1.UnitTest/bin/Debug/net6.0/ClassLibrary1.UnitTest.dll",
+            "program": "${workspaceFolder}/ClassLibrary1/bin/Debug/net6.0/ClassLibrary1.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/ClassLibrary1.UnitTest",
+            "cwd": "${workspaceFolder}/ClassLibrary1",
             "console": "internalConsole",
             "stopAtEntry": false
         },
