@@ -38,12 +38,10 @@
 - [ ] 코드 커버리지 Live
 
 #### Chapter 3. GitHub & GitLab CI 통합
-- [ ] GitHub 빌드
-- [ ] GitHub 코드 커버리지
-- [ ] GitHub 코드 커러비리 결과
-- [ ] GitLab 빌드
-- [ ] GitLab 코드 커버리지
-- [ ] GitLab 코드 커버리지 결과
+- [ ] GitHub CI
+- [ ] GitHub 코드 커버리지 Badge
+- [ ] GitLab CI
+- [ ] GitLab 코드 커버리지 Badge
 
 ---
 
@@ -60,8 +58,11 @@
 - xUnit 인터페이스
 
 #### Chapter 5. Arrange 단위 테스트 패키지 AutoFixture
+- 생성자 변화
+- 임의 데이터
 
 #### Chapter 6. Architecture 단위 테스트 패키지 ArchiUnitNET
+- 의존성 검증
 
 #### Chapter 7. Container 단위 테스트 패키지 DotNet.Testcontainers
 
@@ -71,8 +72,8 @@
 
 ### Part 3. 단위 테스트와 함께 설계하기
 #### Chapter ?. 설계 원칙
-- [ ] 분업(역할과 책임)
-- [ ] 협업(의존성)
+- [ ] 분업(캡슐화 : 역할과 책임)
+- [ ] 협업(의존성 : 상속과 위임)
 - [ ] 의존성 역전
 - [ ] 의존성 주입
 - [ ] 단위 테스트 Best Practice
