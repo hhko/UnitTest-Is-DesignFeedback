@@ -1,13 +1,13 @@
 # 단위 테스트와!
 
-[![Build Status](https://github.com/hhko/With-UnitTest/workflows/Build/badge.svg)](https://github.com/hhko/With-UnitTest/actions?workflow=Build)
+[![Build](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml)
 
 ## 목표
 - 지속 가능한 성장을 위한 **설계를** 구현하고 검증할 수 있다.
   > &nbsp;  
   > [Kent Beck은 2003년에 TDD가 **단순한 설계를** 장려하고 **자신감을** 불어넣어준다고 말하였다.](https://ko.wikipedia.org/wiki/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A3%BC%EB%8F%84_%EA%B0%9C%EB%B0%9C)  
   > [Software engineer Kent Beck stated in 2003 that TDD encourages **simple designs** and inspires **confidence**.](https://en.wikipedia.org/wiki/Test-driven_development)  
-  > &nbsp;   
+  > &nbsp;  
 - 단위 테스트는 **설계 피드백이다.**
   - 단순한 설계 : "지속 가능한 성장을 위한 설계(분업과 협업)"을 장려한다.
   - 자신감 : "회귀 버그"을 검증할 수 있어 "리팩토링" 할 수 있다.
@@ -105,6 +105,7 @@
 ---
 
 ### Part 5. 프로젝트
+#### Chapter ?. Password Validation
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris
 #### Chapter ?. eShop
@@ -113,6 +114,7 @@
 <br/>
 
 ## 참고 자료
+- [ ] GitHub Workflow 소개 [Github Workflow/Actions 소개](https://www.sysnet.pe.kr/2/0/12541)
 - [ ] [Testing .NET Core Apps with Visual Studio Code](https://www.pluralsight.com/guides/testing-.net-core-apps-with-visual-studio-code)
 - [ ] [.NET Core Application Development in Visual Studio Code (VS Code)](https://www.dotnetcurry.com/visualstudio/1451/dotnet-core-development-vs-code)
 - [ ] [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
