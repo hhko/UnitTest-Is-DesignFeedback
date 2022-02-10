@@ -114,7 +114,8 @@
 <br/>
 
 ## 참고 자료
-- [ ] GitHub Workflow 소개 [Github Workflow/Actions 소개](https://www.sysnet.pe.kr/2/0/12541)
+- [ ] GitHub Workflow CI 한글 문서 [Github Workflow/Actions 소개](https://www.sysnet.pe.kr/2/0/12541)
+- [ ] GitHub Workflow CD 한글 문서 [github repo의 Release 활성화 및 Actions를 이용한 자동화 방법](https://www.sysnet.pe.kr/2/0/12542)
 - [ ] [Testing .NET Core Apps with Visual Studio Code](https://www.pluralsight.com/guides/testing-.net-core-apps-with-visual-studio-code)
 - [ ] [.NET Core Application Development in Visual Studio Code (VS Code)](https://www.dotnetcurry.com/visualstudio/1451/dotnet-core-development-vs-code)
 - [ ] [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)

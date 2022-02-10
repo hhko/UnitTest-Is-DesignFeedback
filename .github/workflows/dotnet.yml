@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  SOLUTION_FILE_PATH: ./Part01/Ch02/Step01/MultipleUnitTests.sln
+  BUILD_CONFIGURATION: Release
+
 jobs:
   build:
 
@@ -35,18 +39,18 @@ jobs:
           cd "${{ github.workspace }}/"
           pwd
       - name: Install Packages
-        run: dotnet restore ./Part01/Ch02/Step01/MultipleUnitTests.sln
+        run: dotnet restore ${{env.SOLUTION_FILE_PATH}}
       - name: Build
         run: |
-          dotnet build ./Part01/Ch02/Step01/MultipleUnitTests.sln \
-            -c Release \
+          dotnet build ${{env.SOLUTION_FILE_PATH}} \
+            -c ${{env.BUILD_CONFIGURATION}} \
             --no-restore \
-            --framework ${{ matrix.framework }} 
+            --framework ${{ matrix.framework }}
       - name: Test
         #continue-on-error: true # proceed if tests fail, the report step will report the failure with more details.
         run: |
-          dotnet test ./Part01/Ch02/Step01/MultipleUnitTests.sln \
-            -c Release \
+          dotnet test ${{env.SOLUTION_FILE_PATH}} \
+            -c ${{env.BUILD_CONFIGURATION}} \
             --no-build \
             --verbosity normal \
             --framework ${{ matrix.framework }} \
