@@ -64,10 +64,6 @@
 #### Chapter 6. Architecture 단위 테스트 패키지 ArchiUnitNET
 - 의존성 검증
 
-#### Chapter 7. Container 단위 테스트 패키지 DotNet.Testcontainers
-
-#### Chapter 8. Performance 단위 테스트 패키지 NBench
-
 ---
 
 ### Part 3. 단위 테스트와 함께 설계하기
@@ -84,11 +80,16 @@
 
 ---
 
-### Part ?. 행위 주도 단위 테스트
+### Part 4. 통합 테스트 패키지 이해하기
+#### Chapter ?. Container 통합 테스트 패키지 DotNet.Testcontainers
+
+#### Chapter ?. Performance 통합 테스트 패키지 NBench
+
+#### Chapter ?. Behaviour 통합 테스트 패키지 Specflow
 
 ---
 
-### Part ?. 프로젝트
+### Part 5. 프로젝트
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris
 #### Chapter ?. eShop
