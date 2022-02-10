@@ -85,6 +85,8 @@
 
 #### Chapter ?. Performance 통합 테스트 패키지 NBench
 
+#### Chapter ?. Snapshot 통합 테스트 패키지 ApprovalTests.Net
+
 #### Chapter ?. Behaviour 통합 테스트 패키지 Specflow
 
 ---
