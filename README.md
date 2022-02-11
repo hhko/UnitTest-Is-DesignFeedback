@@ -73,21 +73,7 @@
 
 ---
 
-### Part 3. 단위 테스트와 함께 설계하기
-#### Chapter ?. 설계 원칙
-- [ ] 분업(캡슐화 : 역할과 책임)
-- [ ] 협업(의존성 : 상속과 위임)
-- [ ] 의존성 역전
-- [ ] 의존성 주입
-- [ ] 단위 테스트 Best Practice
-
-#### Chapter ?. 도메인 주도 설계
-
-#### Chapter ?. 클린 아키텍처
-
----
-
-### Part 4. 통합 테스트 패키지 이해하기
+### Part 3. 통합 테스트 패키지 이해하기
 #### Chapter ?. Behaviour 통합 테스트 패키지 Specflow
 
 #### Chapter ?. Container 통합 테스트 패키지 DotNet.Testcontainers
@@ -101,6 +87,20 @@
 #### Chapter ?. Load 통합 테스트 패키지 ?.
 
 #### Chapter ?. Database 통합 테스트 패키지 ?.
+
+---
+
+### Part 4. 단위 테스트와 함께 설계하기
+#### Chapter ?. 설계 원칙
+- [ ] 분업(캡슐화 : 역할과 책임)
+- [ ] 협업(의존성 : 상속과 위임)
+- [ ] 의존성 역전
+- [ ] 의존성 주입
+- [ ] 단위 테스트 Best Practice
+
+#### Chapter ?. 도메인 주도 설계
+
+#### Chapter ?. 클린 아키텍처
 
 ---
 
