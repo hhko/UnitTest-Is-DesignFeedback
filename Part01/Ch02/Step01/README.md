@@ -131,9 +131,15 @@ dotnet test `
 
 ## 코드 커버리지 생성
 ```shell
+dotnet tool install -g dotnet-reportgenerator-globaltool
+dotnet tool list
+dotnet tool uninstall -g dotnet-reportgenerator-globaltool
+```
+
+```shell
 # HTML(OpenCover) 코드 커버리지 생성
 reportgenerator `
-	-reports:**/TestResults/Coverage/coverage.opencover.xml `
+	-reports:**/coverage.opencover.xml `
 	-targetdir:./TestResults/CoverageHtml `
 	-reporttypes:Html `
 	-historydir:./TestResults/CoverageHistory
