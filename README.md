@@ -2,7 +2,6 @@
 
 [![Build](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml)
 
-## 단위 테스트
 > &nbsp;  
 > [Kent Beck은 2003년에 TDD가 **단순한 설계를** 장려하고 **자신감을** 불어넣어준다고 말하였다.](https://ko.wikipedia.org/wiki/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A3%BC%EB%8F%84_%EA%B0%9C%EB%B0%9C)  
 > [Software engineer Kent Beck stated in 2003 that TDD encourages **simple designs** and inspires **confidence**.](https://en.wikipedia.org/wiki/Test-driven_development)  
