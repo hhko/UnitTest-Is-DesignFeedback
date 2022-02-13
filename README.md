@@ -79,7 +79,7 @@
 #### Chapter ?. Container 통합 테스트 패키지 DotNet.Testcontainers
 - [x] Step 01. WebAPI 호스트 디버깅([구현](./Part3/Ch01/Step01/))
 - [x] Step 02. WebAPI 컨테이너 디버깅([구현](./Part3/Ch01/Step02/))
-- [ ] Step 03. 콘솔 컨테이너 디버깅
+- [x] Step 03. Console 컨테이너 디버깅([구현](./Part3/Ch01/Step03/))
 
 #### Chapter ?. Behaviour 통합 테스트 패키지 Specflow
 

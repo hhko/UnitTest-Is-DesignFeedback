@@ -12,6 +12,7 @@
   ![](./AddDockerFiles.png)  
   - Ctrl + Shift + P : `Docker: Add Docker Files to Workspace...` > `.NET: ASP.NET Core` > `Linux` > `80, 443` > `No`
     - `Dockerfile` 생성됨
+    - `.dockerignore` 파일 추가됨
     - `launch.json` 추가됨
     - `tasks.json` 추가됨
 - `launch.json` 파일 수정 : `dockerServerReadyAction` 추가
