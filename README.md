@@ -1,4 +1,4 @@
-# 설계 피드백 튜토리얼
+# 단위 테스트는 설계 피드백이다.
 
 [![Build](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml)
 
@@ -27,16 +27,16 @@
 
 ### Part 1. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
-- [x] Step 01. 단위 테스트 구성([구현](./Part01/Ch01/Step01/))
-- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part01/Ch01/Step02/))
-- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part01/Ch01/Step03/))
-- [x] Step 04. 단위 테스트 디버깅([구현](./Part01/Ch01/Step04/))
-- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part01/Ch01/Step05/))
-- [x] Step 06. 단위 테스트 출력([구현](./Part01/Ch01/Step06/))
-- [x] Step 07. 단위 테스트 격리 실행([구현](./Part01/Ch01/Step07/))
-- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part01/Ch01/Step08/))
-- [x] Step 09. 단위 테스트 구현 패턴([구현](./Part01/Ch01/Step09/))
-- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part01/Ch01/Step10/))
+- [x] Step 01. 단위 테스트 구성([구현](./Part1/Ch01/Step01/))
+- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part1/Ch01/Step02/))
+- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part1/Ch01/Step03/))
+- [x] Step 04. 단위 테스트 디버깅([구현](./Part1/Ch01/Step04/))
+- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part1/Ch01/Step05/))
+- [x] Step 06. 단위 테스트 출력([구현](./Part1/Ch01/Step06/))
+- [x] Step 07. 단위 테스트 격리 실행([구현](./Part1/Ch01/Step07/))
+- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part1/Ch01/Step08/))
+- [x] Step 09. 단위 테스트 구현 패턴([구현](./Part1/Ch01/Step09/))
+- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part1/Ch01/Step10/))
 
 #### Chapter 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
@@ -75,9 +75,13 @@
 ---
 
 ### Part 3. 통합 테스트 패키지 이해하기
-#### Chapter ?. Behaviour 통합 테스트 패키지 Specflow
 
 #### Chapter ?. Container 통합 테스트 패키지 DotNet.Testcontainers
+- [x] Step 01. WebAPI 호스트 디버깅([구현](./Part3/Ch01/Step01/))
+- [x] Step 02. WebAPI 컨테이너 디버깅([구현](./Part3/Ch01/Step02/))
+- [ ] Step 03. 콘솔 컨테이너 디버깅
+
+#### Chapter ?. Behaviour 통합 테스트 패키지 Specflow
 
 #### Chapter ?. Performance 통합 테스트 패키지 NBench
 
