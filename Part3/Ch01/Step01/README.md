@@ -1,5 +1,7 @@
 # WebAPI 호스트 디버깅
 
+![](./WebApiHost.png)
+
 ```json
 {
     "version": "0.2.0",
@@ -20,4 +22,3 @@
 - 디버깅할 때 WebAPI 테스트를 위한 Swagger 페이지을 연다.
   - `launchBrowser` 설정
   - `cmd /C start https://localhost:7103/swagger/index.html` 명령을 자동 실행 시킨다.
-![](./WebApiHost.png)
