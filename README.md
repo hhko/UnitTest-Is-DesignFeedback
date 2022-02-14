@@ -75,6 +75,7 @@
 ---
 
 ### Part 3. 통합 테스트 패키지 이해하기
+#### Chapter ?. Console 통합 테스트 패키지 CliWrap
 
 #### Chapter ?. Container 통합 테스트 패키지 DotNet.Testcontainers
 - [x] Step 01. WebAPI 호스트 디버깅([구현](./Part3/Ch01/Step01/))
