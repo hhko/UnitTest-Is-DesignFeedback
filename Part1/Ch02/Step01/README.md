@@ -213,3 +213,11 @@ reportgenerator `
 	"coverage.info"
 ],
 ```
+
+```
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <CollectCoverage>true</CollectCoverage>
+    <CoverletOutputFormat>opencover</CoverletOutputFormat>
+  </PropertyGroup>
+```
