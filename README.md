@@ -154,6 +154,14 @@
   - [ ] [XUnit – Part 3: Action Based Assertions Assert.Raises and Assert.Throws](https://hamidmosalla.com/2020/01/20/xunit-part-3-action-based-assertions-assert-raises-and-assert-throws/)
   - [ ] [XUnit – Part 2: Value and Type Based Assertions in xUnit](https://hamidmosalla.com/2020/01/12/xunit-part-2-value-and-type-based-assertions-in-xunit/)
   - [ ] [XUnit – Part 1: xUnit Packages and Writing Your First Unit Test](https://hamidmosalla.com/2020/01/05/xunit-part-1-xunit-packages-and-writing-your-first-unit-test/)
+- .NET 6
+  - [ ] [Dependency injection (with IOptions) in Console Apps in .NET Core](https://keestalkstech.com/2018/04/dependency-injection-with-ioptions-in-console-apps-in-net-core-2/)
+  - [ ] [How to use the IOptions pattern for configuration in ASP.NET Core RC2](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
+  - [ ] [ASP.NET Core Configuration – Options Pattern](https://code-maze.com/aspnet-configuration-options/)
+  - [ ] [How to use the. Net core option mode [options]](https://developpaper.com/how-to-use-the-net-core-option-mode-options/)
+  - [ ] [.NET Core Manually Instantiating IOptions for Unit Testing](https://mitch.codes/net-core-manually-instantiating-ioptions-for-unit-testing/)
+  - [ ] [.NET Core–Using IOptions<> in your unit test](https://bartwullems.blogspot.com/2020/04/net-coreusing-ioptions-in-your-unit-test.html)
+  - [ ] [ASP.NET Core의 옵션 패턴](https://docs.microsoft.com/ko-kr/aspnet/core/fundamentals/configuration/options?view=aspnetcore-6.0)
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
@@ -199,3 +207,13 @@ dotnet test -c Release
   --framework ?
   --verbosity=minimal
   ```
+- [ ] PlantUML
+  ```
+  puml-gen {입력경로} {출력경로} -dir
+  puml-gen {입력경로} {출력경로} -dir -excludePaths bin,obj
+  puml-gen {입력경로} {출력경로} -dir -excludePaths bin,obj -allInOne
+  puml-gen .\01 .\01\UMLs -dir -excludePaths bin,obj,Program.cs,Date,Month,Currency -allInOne
+  ```
+  - VSCode 확장 도구?
+  - `donet tool install -g`, ...
+  - https://github.com/pierre3/PlantUmlClassDiagramGenerator
