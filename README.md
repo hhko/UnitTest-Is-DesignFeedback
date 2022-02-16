@@ -87,7 +87,9 @@
 
 #### Chapter ?. Snapshot 통합 테스트 패키지 ApprovalTests.Net
 
-#### Chapter ?. Web 통합 테스트 패키지 Playwright
+#### Chapter ? WebAPI 통합 테스트 페키지 Flurl
+
+#### Chapter ?. WebUI 통합 테스트 패키지 Playwright
 
 #### Chapter ?. Load 통합 테스트 패키지 ?.
 
