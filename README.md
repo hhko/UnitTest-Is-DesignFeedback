@@ -1,7 +1,6 @@
 # 단위 테스트와!
 
 [![Build](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml)
-[TODO](./TODO.md)
 
 > - [**Kent Beck은** 2003년에 TDD가 **단순한 설계를** 장려하고 **자신감을** 불어넣어준다고 말하였다.](https://ko.wikipedia.org/wiki/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A3%BC%EB%8F%84_%EA%B0%9C%EB%B0%9C)  
 > - [Software engineer **Kent Beck** stated in 2003 that TDD encourages **simple designs** and inspires **confidence**.](https://en.wikipedia.org/wiki/Test-driven_development)  
@@ -14,6 +13,8 @@
 - 지속 가능한 성장을 위한 **설계를** 구현하고 검증할 수 있다.
 
 ## 목차
+- [TODO](./TODO.md)
+
 ### Part 0. 개발 환경 구축하기
 - .NET SDK([링크](https://dotnet.microsoft.com/en-us/download/dotnet))
 - Visual Studio Code([링크](https://code.visualstudio.com/download))
@@ -24,6 +25,7 @@
     - .NET Core Test Explorer([링크](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer))
     - Coverage Gutters([링크](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters))
     - Cucumber (Gherkin) Full Support([링크](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete))
+    - PlantUML?
 
 ### Part 1. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
