@@ -1,0 +1,35 @@
+before_script:
+  # 한글 깨짐 해결하기
+  - chcp 65001
+  - $OutputEncoding = [System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::UTF8
+  - $PSDefaultParameterValues['*:Encoding'] = 'utf8'
+  - $env:LC_ALL='C.UTF-8'
+
+xyz-build:
+  stage: build
+  script:
+    - dotnet restore .\CodeCoverageByCI.sln
+    - dotnet build --no-restore .\Src\CodeCoverageByCI\CodeCoverageByCI.sln
+
+xyz-tests:
+  stage: test
+  script:
+    # 한개 명령 여러 줄로 구분하기
+    # https://docs.gitlab.com/ee/ci/yaml/script.html#split-long-commands
+    - dotnet test .\CodeCoverageByCI.sln
+        /p:CollectCoverage=true
+        /p:CoverletOutput=./TestResults/Coverage/
+        /p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover
+        --logger:"junit;LogFilePath=./TestResults/Gitlab/{assembly}.xml;MethodFormat=Class;FailureBodyFormat=Verbose"
+  artifacts:
+    when: always
+    #paths:
+     # GitLab Test 결과 출력하기
+     #- ./**/TestResults/Gitlab/*.xml
+     # GitLab CodeCoverage를 웹 코드에 출력하기
+     #- ./**/TestResults/Coverage/coverage.cobertura.xml
+    reports:
+      junit:
+       - ./**/TestResults/Gitlab/*.xml
+      cobertura:
+       - ./**/TestResults/Coverage/coverage.cobertura.xml
