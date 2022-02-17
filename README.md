@@ -2,8 +2,8 @@
 
 [![Build](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hhko/With-UnitTest/actions/workflows/dotnet.yml)
 
-> - [**Kent Beck은** 2003년에 TDD가 **단순한 설계를** 장려하고 **자신감을** 불어넣어준다고 말하였다.](https://ko.wikipedia.org/wiki/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A3%BC%EB%8F%84_%EA%B0%9C%EB%B0%9C)  
-> - [Software engineer **Kent Beck** stated in 2003 that TDD encourages **simple designs** and inspires **confidence**.](https://en.wikipedia.org/wiki/Test-driven_development)  
+> - [Kent Beck은 2003년에 TDD가 **단순한 설계를** 장려하고 **자신감을** 불어넣어준다고 말하였다.](https://ko.wikipedia.org/wiki/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A3%BC%EB%8F%84_%EA%B0%9C%EB%B0%9C)  
+> - [Software engineer Kent Beck stated in 2003 that TDD encourages **simple designs** and inspires **confidence**.](https://en.wikipedia.org/wiki/Test-driven_development)  
 
 - 단위 테스트는 **설계 피드백이다.**
   - 단순한 설계 : "지속 가능한 성장을 위한 설계(분업과 협업)"을 장려한다.
@@ -87,9 +87,7 @@
 
 #### Chapter ?. Snapshot 통합 테스트 패키지 ApprovalTests.Net
 
-#### Chapter ? WebAPI 통합 테스트 페키지 Flurl
-
-#### Chapter ?. WebUI 통합 테스트 패키지 Playwright
+#### Chapter ?. Web 통합 테스트 패키지 Playwright
 
 #### Chapter ?. Load 통합 테스트 패키지 ?.
 
@@ -190,6 +188,7 @@
 - [ ] 성능 | siege
 - [ ] 데이터베이스 | Respawn
 - [ ] 데이터베이스 | EFCore?
+- stryker-net?
 
 ## dotnet test 명령
 ```
@@ -218,3 +217,16 @@ dotnet test -c Release
   - VSCode 확장 도구?
   - `donet tool install -g`, ...
   - https://github.com/pierre3/PlantUmlClassDiagramGenerator
+- dotnet 명령
+  ```
+  dotnet sln list | ForEach-Object {dotnet add $_ package JunitXml.TestLogger}
+  ```
+
+.\gitlab-runner.exe register `
+   --non-interactive `
+   --url "http://wish.mirero.co.kr/" `
+   --registration-token "qHXdTQizKZZpURLiYGsZ" `
+   --description "hyungho.ko" `
+   --tag-list "win" `
+   --executor "shell" `
+   --shell "powershell"
