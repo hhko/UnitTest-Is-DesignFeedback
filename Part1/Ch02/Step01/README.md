@@ -215,9 +215,11 @@ reportgenerator `
 ```
 
 ```
+coverlet.msbild
+
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
     <CollectCoverage>true</CollectCoverage>
-    <CoverletOutputFormat>opencover</CoverletOutputFormat>
+    <CoverletOutput>./TestResults/Coverage/</CoverletOutput>
+    <CoverletOutputFormat>json,lcov,cobertura,opencover</CoverletOutputFormat>
   </PropertyGroup>
 ```
