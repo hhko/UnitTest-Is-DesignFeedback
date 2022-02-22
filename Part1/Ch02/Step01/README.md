@@ -1,3 +1,24 @@
+```shell
+https://www.powershellgallery.com/packages/DotNet.Tools/0.1
+https://github.com/arnoldclark/DotNet.Tools/blob/master/DotNet.Tools.psm1
+Install-Module -Name DotNet.Tools
+
+# 1. 패키지 추가
+coverlet.msbuild
+JunitXml.TestLogger
+
+dotnet sln list | ForEach-Object {dotnet add $_ package JunitXml.TestLogger}
+
+# 2. 테스트 실행
+dotnet test `
+	--logger "console;verbosity=detailed" `
+	--logger "junit;LogFilePath=./TestResults/Gitlab/{assembly}.xml;MethodFormat=Class;FailureBodyFormat=Verbose" `
+	/p:CollectCoverage=true  `
+	/p:CoverletOutput=./TestResults/Coverage/ `
+	/p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover
+```
+
+
 # 코드 커버리지
 
 | 형식       | 파일 이름              |
