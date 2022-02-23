@@ -71,7 +71,9 @@
 - 생성자 변화
 - 임의 데이터
 
-#### Chapter 6. Architecture 단위 테스트 패키지 ArchiUnitNET
+#### Chapter 6. Mutation 단위 테스트 패키지 Stryker.NET
+
+#### Chapter 7. Architecture 단위 테스트 패키지 ArchiUnitNET
 - 의존성 검증
 
 ---
