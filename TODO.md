@@ -62,8 +62,9 @@
 - [ ] 데이터 | Bogus
 - [ ] 로그 | Serilog.Sinks.InMemory
 ---
-- [ ] 웹 | Playwright-dotnet
-- [ ] 웹 | bUnit
+- [ ] WebAPI | WireMock.NET
+- [ ] WebUI | Playwright-dotnet
+- [ ] WebUI | bUnit
 - [ ] 성능 | NBomber
 - [ ] 성능 | siege
 - [ ] 데이터베이스 | Respawn
