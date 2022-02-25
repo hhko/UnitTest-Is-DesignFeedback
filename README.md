@@ -48,6 +48,7 @@
 - [ ] 코드 커버리지 Live
 
 #### Chapter 3. GitHub & GitLab CI 통합
+- [ ] Nuke
 - [ ] GitHub CI
 - [ ] GitHub 코드 커버리지 Badge
 - [ ] GitLab CI
