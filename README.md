@@ -16,37 +16,32 @@
 - [TODO](./TODO.md)
 
 ### Part 1. 개발 환경 구축하기
-- .NET SDK([링크](https://dotnet.microsoft.com/en-us/download/dotnet))
-- Visual Studio Code([링크](https://code.visualstudio.com/download))
-- Visual Studio Code 확장 도구
-  - 프로그래밍 언어
-    - C#([링크](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp))
-  - 단위 테스트
-    - .NET Core Test Explorer([링크](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer))
-    - Coverage Gutters([링크](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters))
-    - Cucumber (Gherkin) Full Support([링크](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete))
-  - 설계
-    - PlantUML?
-- .NET Tool
-  - 설계
-    - PlantUmlClassDiagramGenerator([링크](https://github.com/pierre3/PlantUmlClassDiagramGenerator))
-  - 코드 커버리지
-    - Report Generator([링크](https://github.com/danielpalme/ReportGenerator))
-  - 테스트
-    - Stryker([링크](https://github.com/stryker-mutator/stryker-net))
+#### Chapter 1. .NET SDK
+- [ ] Step 01. .NET SDK 설치
+- [ ] Step 02. .NET SDK 명령
+
+#### Chapter 2. Visual Studio Code
+- [ ] Step 01. Visual Studio Code 설치([문서](./Part1/Ch02/Step01/))
+- [ ] Step 02. Visual Studio Code 확장 도구 목록([문서](./Part1/Ch02/Step02/))
+- [ ] Step 03. Visual Studio Code tasks.json 파일
+- [ ] Step 04. Visual Studio Code launch.json 파일
+
+#### Chapter 3. .NET Tool
+- [ ] Step 01. .NET 도구 명령
+- [ ] Step 02. .NET 도구 목록([문서](./Part1/Ch03/Step02/))
 
 ### Part 2. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
-- [x] Step 01. 단위 테스트 구성([구현](./Part1/Ch01/Step01/))
-- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part1/Ch01/Step02/))
-- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part1/Ch01/Step03/))
-- [x] Step 04. 단위 테스트 디버깅([구현](./Part1/Ch01/Step04/))
-- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part1/Ch01/Step05/))
-- [x] Step 06. 단위 테스트 출력([구현](./Part1/Ch01/Step06/))
-- [x] Step 07. 단위 테스트 격리 실행([구현](./Part1/Ch01/Step07/))
-- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part1/Ch01/Step08/))
-- [x] Step 09. 단위 테스트 구현 패턴([구현](./Part1/Ch01/Step09/))
-- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part1/Ch01/Step10/))
+- [x] Step 01. 단위 테스트 구성([구현](./Part2/Ch01/Step01/))
+- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part2/Ch01/Step02/))
+- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part2/Ch01/Step03/))
+- [x] Step 04. 단위 테스트 디버깅([구현](./Part2/Ch01/Step04/))
+- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part2/Ch01/Step05/))
+- [x] Step 06. 단위 테스트 출력([구현](./Part2/Ch01/Step06/))
+- [x] Step 07. 단위 테스트 격리 실행([구현](./Part2/Ch01/Step07/))
+- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part2/Ch01/Step08/))
+- [x] Step 09. 단위 테스트 구현 패턴([구현](./Part2/Ch01/Step09/))
+- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part2/Ch01/Step10/))
 
 #### Chapter 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
