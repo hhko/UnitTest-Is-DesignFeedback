@@ -25,7 +25,11 @@
     - .NET Core Test Explorer([링크](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer))
     - Coverage Gutters([링크](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters))
     - Cucumber (Gherkin) Full Support([링크](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete))
+  - 설계
     - PlantUML?
+  - .NET TOOL
+    - Report Generator([링크](https://github.com/danielpalme/ReportGenerator))
+    - Stryker([링크](https://github.com/stryker-mutator/stryker-net))
 
 ### Part 1. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
@@ -47,12 +51,12 @@
 - [ ] 코드 커버리지 VSCode 옵션
 - [ ] 코드 커버리지 Live
 
-#### Chapter 3. GitHub & GitLab CI 통합
+#### Chapter 3. CI 통합
 - [ ] Nuke
-- [ ] GitHub CI
-- [ ] GitHub 코드 커버리지 Badge
-- [ ] GitLab CI
-- [ ] GitLab 코드 커버리지 Badge
+- [ ] GitHub 빌드
+- [ ] GitHub 코드 커버리지
+- [ ] GitLab 빌드
+- [ ] GitLab 코드 커버리지
 
 ---
 
@@ -93,15 +97,21 @@
 
 #### Chapter ?. Snapshot 통합 테스트 패키지 ApprovalTests.Net
 
-#### Chapter ?. Web 통합 테스트 패키지 Playwright
+#### Chapter ?. HTTP API 통합 테스트 패키지 Flurl
+
+#### Chapter ?. Web UI 통합 테스트 패키지 Playwright
+
+#### Chapter ?. App UI 통합 테스트 패키지 ?
 
 #### Chapter ?. Load 통합 테스트 패키지 ?.
 
-#### Chapter ?. Database 통합 테스트 패키지 ?.
+#### Chapter ?. Database 통합 테스트 패키지 EfCore.TestSupport(ThrowawayDb)
+
+#### Chapter ?. Database 통합 테스트 패키지 Respawn
 
 ---
 
-### Part 4. 단위 테스트와 함께 설계하기
+### Part 4. 설폐 피드백하기
 #### Chapter ?. 설계 원칙
 - [ ] 분업(캡슐화 : 역할과 책임)
 - [ ] 협업(의존성 : 상속과 위임)

@@ -41,6 +41,12 @@
   - [ ] [.NET Core Manually Instantiating IOptions for Unit Testing](https://mitch.codes/net-core-manually-instantiating-ioptions-for-unit-testing/)
   - [ ] [.NET Core–Using IOptions<> in your unit test](https://bartwullems.blogspot.com/2020/04/net-coreusing-ioptions-in-your-unit-test.html)
   - [ ] [ASP.NET Core의 옵션 패턴](https://docs.microsoft.com/ko-kr/aspnet/core/fundamentals/configuration/options?view=aspnetcore-6.0)
+- 통합 테스트
+  - [ ] gRPC 통합 테스트 : [Integration Tests for gRPC Services in ASP.NET Core](https://thecloudblog.net/post/integration-tests-for-grpc-services-in-asp.net-core/)
+  - [ ] Docker 기반 PostgreSQL 통합 테스트 : [Integration testing with asp net core, postgres and docker](https://t-heiten.net/docker/integration-testing-with-asp-net-core-postgres-and-docker/)
+  - [ ] PostgreSQL 통합 테스트 : [PostgreSQL Integration Testing in .NET Core](https://ufukhaciogullari.com/blog/postgresql-integration-testing-in-net-core/)
+  - [ ] EFCore in Action 책 : [Using PostgreSQL in dev: Part 2 – Testing against a PostgreSQL database](https://www.thereformedprogrammer.net/using-postgresql-in-dev-part-2-testing-against-a-postgresql-database/)
+  - [ ] EFCore in Action 책, 테스트 장단점 비교 : [New features for testing your Entity Framework Core 5 and above](https://www.thereformedprogrammer.net/new-features-for-unit-testing-your-entity-framework-core-5-code/)
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
