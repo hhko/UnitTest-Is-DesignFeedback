@@ -15,7 +15,7 @@
 ## 목차
 - [TODO](./TODO.md)
 
-### Part 0. 개발 환경 구축하기
+### Part 1. 개발 환경 구축하기
 - .NET SDK([링크](https://dotnet.microsoft.com/en-us/download/dotnet))
 - Visual Studio Code([링크](https://code.visualstudio.com/download))
 - Visual Studio Code 확장 도구
@@ -35,7 +35,7 @@
   - 테스트
     - Stryker([링크](https://github.com/stryker-mutator/stryker-net))
 
-### Part 1. 단위 테스트 기초 다지기
+### Part 2. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
 - [x] Step 01. 단위 테스트 구성([구현](./Part1/Ch01/Step01/))
 - [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part1/Ch01/Step02/))
@@ -64,7 +64,7 @@
 
 ---
 
-### Part 2. 단위 테스트 패키지 이해하기
+### Part 3. 단위 테스트 패키지 이해하기
 #### Chapter 4. 단위 테스트 패키지 xUnit
 - 설정
 - Lifecycle
@@ -87,7 +87,7 @@
 
 ---
 
-### Part 3. 통합 테스트 패키지 이해하기
+### Part 4. 통합 테스트 패키지 이해하기
 #### Chapter ?. Console 통합 테스트 패키지 CliWrap
 
 #### Chapter ?. Container 통합 테스트 패키지 DotNet.Testcontainers
@@ -115,7 +115,7 @@
 
 ---
 
-### Part 4. 설폐 피드백하기
+### Part 5. 설폐 피드백하기
 #### Chapter ?. 설계 원칙
 - [ ] 분업(캡슐화 : 역할과 책임)
 - [ ] 협업(의존성 : 상속과 위임)
@@ -129,7 +129,7 @@
 
 ---
 
-### Part 5. 프로젝트
+### Part 6. 프로젝트
 #### Chapter ?. Password Validation
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris
