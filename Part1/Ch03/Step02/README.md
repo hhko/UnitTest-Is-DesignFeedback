@@ -1,4 +1,4 @@
-# .NET Tool 목록
+# .NET 도구
 
 ## 설계
 - PlantUmlClassDiagramGenerator([링크](https://github.com/pierre3/PlantUmlClassDiagramGenerator))

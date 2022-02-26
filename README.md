@@ -21,14 +21,14 @@
 - [ ] Step 02. .NET SDK 명령
 
 #### Chapter 2. Visual Studio Code
-- [ ] Step 01. Visual Studio Code 설치([문서](./Part1/Ch02/Step01/))
-- [ ] Step 02. Visual Studio Code 확장 도구 목록([문서](./Part1/Ch02/Step02/))
+- [x] Step 01. Visual Studio Code 설치([문서](./Part1/Ch02/Step01/))
+- [x] Step 02. Visual Studio Code 확장 도구([문서](./Part1/Ch02/Step02/))
 - [ ] Step 03. Visual Studio Code tasks.json 파일
 - [ ] Step 04. Visual Studio Code launch.json 파일
 
 #### Chapter 3. .NET Tool
 - [ ] Step 01. .NET 도구 명령
-- [ ] Step 02. .NET 도구 목록([문서](./Part1/Ch03/Step02/))
+- [x] Step 02. .NET 도구([문서](./Part1/Ch03/Step02/))
 
 ### Part 2. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
