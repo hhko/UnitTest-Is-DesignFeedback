@@ -27,21 +27,21 @@ dotnet build `
 dotnet test `
   --no-build `
   --configuration Release
-	--logger "console;verbosity=detailed" `
-	--logger "junit;LogFilePath="../artifacts/gitlab/{assembly}.xml";MethodFormat=Class;FailureBodyFormat=Verbose" `
-	/p:CollectCoverage=true `
-	/p:CoverletOutput="../artifacts/coverage/" `
+  --logger "console;verbosity=detailed" `
+  --logger "junit;LogFilePath="../artifacts/gitlab/{assembly}.xml";MethodFormat=Class;FailureBodyFormat=Verbose" `
+  /p:CollectCoverage=true `
+  /p:CoverletOutput="../artifacts/coverage/" `
   /p:CoverletOutputFormat=json `                                # 마지막을 제외한 테스트 프로젝트
   #/p:CoverletOutputFormat=lcov `                               # 마지막 테스트 프로젝트
-	#/p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover
+  #/p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover
   /p:MergeWith="../artifacts/coverage/coverage.json"
 
 # 4. 코드 커버리지 보고서 생성
 reportgenerator `
-	-reports:**/artifacts/coverage/coverage.info `                # lcov 통합 코드 커버리지 결과 파일
-	-targetdir:./artifacts/coverage/report `
-	-reporttypes:Html `
-	-historydir:./artifacts/coverage/report-history
+  -reports:**/artifacts/coverage/coverage.info `                # lcov 통합 코드 커버리지 결과 파일
+  -targetdir:./artifacts/coverage/report `
+  -reporttypes:Html `
+  -historydir:./artifacts/coverage/report-history
 ```
 ```cs
 // 1. 패키지 복원
