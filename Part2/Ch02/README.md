@@ -52,7 +52,15 @@ reportgenerator `
 
 // 4. 코드 커버리지 보고서 생성
 
+// 5. 클래스 다이어그램 생성
+
+// 6. 코드 정적 분석
+//    - MS 오픈소스?
+//    - MSBuild .edit...?
 ```
+- .NET Tool 연동 이해 : ReportGenerator
+- .NET Tool 연동 이해 : Class Diagram 생성
+- Clean 이전 파일 삭제
 
 ## 목차
 - Nuke란
