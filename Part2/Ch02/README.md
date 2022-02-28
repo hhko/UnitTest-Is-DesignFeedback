@@ -90,7 +90,7 @@ Do you use GitVersion?
   - `build.sh` 파일 : Linux에서 build 프로젝트 실행을 위한 스크립트 파일
   - `.nuke` : nuke 관리 폴더
 
-## Nuke 소수 구성
+## Nuke 소스 구성
 ```cs
 // 실행 Target 지정
 public static int Main () => Execute<Build>(x => x.Compile);
@@ -123,6 +123,33 @@ Target Compile => _ => _
     });
 ```
 
+### Parameter 추가
+```cs
+[Parameter("Hello Parameter")]
+readonly string Hello;
+```
+```
+.\build.cmd --help
+ 
+Parameters:
+  --hello                 Hello Parameter.
+```
+
+### 로그 출력
+```cs
+using Serilog;
+
+Log.Information("로그 출력");
+```
+```shell
+15:27:04 [INF] 로그 출력
+```
+
+## Nuke 명령
+- `--help` : 도움말
+- `--plan` : Target 시각화
+  ![](./nuke-plan.png)
+  
 ## Nuke FAQ
 - 빌드 코드의 IntelliSense가 정상동작하지 않을 때
   - `./build` 프로젝트 위치에서 VSCode 열기한다.
