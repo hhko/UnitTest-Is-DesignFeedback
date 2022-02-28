@@ -7,7 +7,7 @@
   - Parameter 추가
   - 로그 출력
 - Nuke 명령
-- Nuke 
+- Nuke FAQ
 - 참고 동영상
 
 ## Nuke란?
