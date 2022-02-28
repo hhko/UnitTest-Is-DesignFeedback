@@ -3,6 +3,12 @@
 - Nuke 사용 목적
 - Nuke 설치
 - Nuke 빌드 프로젝트 생성
+- Nuke 소스 구성
+  - Parameter 추가
+  - 로그 출력
+- Nuke 명령
+- Nuke 
+- 참고 동영상
 
 ## Nuke란?
 - `The cross-platform build automation solution for .NET with C# DSL.`  
@@ -187,3 +193,4 @@ Log.Information("로그 출력");
 ## 참고 동영상
 - [Nuke — Designing a Build System with IDE Support in Mind](https://www.youtube.com/watch?v=N57Zjb5-08I)
 - [NUKE - C# Build Automation System - Overview & Tutorial](https://www.youtube.com/watch?v=V5m4yPMjCtY)
+- [NUKE: Build automation for C# developers](https://www.youtube.com/watch?v=7gEqxzD6hbs)
