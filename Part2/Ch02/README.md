@@ -1,0 +1,107 @@
+## Nuke란?
+- `The cross-platform build automation solution for .NET with C# DSL.`  
+  .NET 솔루션 빌드 자동화를 제공하기 위해 C# 기반으로 개발된 도메인 특화 언어(DSL : Domain-Specific Language)입니다.
+- 빌드 자동화를 위한 스크립트를 도메인 지식(빌드) 중심으로 작성합니다.
+- 도메인 지식(빌드)에 집중할 수 있도록 C# 클래스를 제공합니다.
+ 
+## Nuke 설치
+- .NET Tool 설치
+  ```shell
+  # 설치
+  dotnet tool install --global Nuke.GlobalTool
+
+  # 확인
+  dotnet tool list --global
+  ```
+- VSCode 확장 도구 설치
+  - [NUKE Support](https://marketplace.visualstudio.com/items?itemName=nuke.support)
+
+## Nuke 빌드 프로젝트 생성
+```
+# 기본적으로 솔루션 파일이 있는 폴더에서 실행시킨다.
+nuke :setup
+NUKE Global Tool version 6.0.1 (Windows,.NETCoreApp,Version=v3.1)
+Could not find root directory. Falling back to working directory ...
+```
+
+| 템플릿 질문 | 설명 | 기본 값 | 선택 값 |
+|---|---|---|---|
+| How should the build project be named?                | 빌드 솔루션 파일명     | `_build`  |       |
+| Where should the build project be located?            | 빌드 솔루션 위치       | `./build` |       |
+| Which NUKE version should be used?                    | Nuke 버전             | `6.0.1`   |       |
+| Which solution should be the default?                 | 빌드 대상 솔루션 선택   |          | `.sln` |
+| Do you need help getting started with a basic build?  | 빌드 기본 코드         |           |        |
+| Restore, compile, pack using ...                      | 빌드 도구 선택         |           | `dotnet CLI`, `MSBuild/Mono` |
+| Source files are located in ...                       | 소스 폴더 선택         |           | `./source`, `./src` |
+| Move packages to ...                                  | 패키지 폴더 선택       |           | `./output`, `./artifacts` |
+| Where do test projects go?                            | 테스트 소스 폴더 선택   |          | `./tests` |
+| Do you use git?                                       | Git 사용 유/무 선택    |          |         |
+| Do you use GitVersion?                                | GitVersion 선택        |          |         |
+
+```
+How should the build project be named?
+»                 [default: _build]
+Where should the build project be located?
+»                 [default: ./build]
+Which NUKE version should be used?
+»  6.0.1 (latest release)
+Which solution should be the default?
+»  {찾은 솔루션 파일명}.sln
+   None
+Do you need help getting started with a basic build?
+»  Yes, get me started!
+   No, I can do this myself...  
+Restore, compile, pack using ...
+»  dotnet CLI
+   MSBuild/Mono
+   Neither   
+Source files are located in ...
+»  ./source
+   ./src
+   Neither   
+Move packages to ...
+»  ./output
+   ./artifacts
+   Neither   
+Where do test projects go?
+»  ./tests
+   Same as source   
+Do you use git?
+»  Yes, just not setup yet
+   No, something else   
+Do you use GitVersion?
+»  Yes, just not setup yet
+   No, custom versioning   
+```
+
+## Nuek FAQ
+- 빌드 코드의 IntelliSense가 정상동작하지 않을 때
+  - `./build` 프로젝트 위치에서 VSCode 열기한다.
+  - `./build` 프로젝트 위치에서 VSCode을 열면 정상적으로 `IntelliSense`가 동작한다.
+- 실행하기
+  ```shell
+  # Case 1. 파일 실행
+  ./build.cmd
+  
+  # Case 2. Nuke 실행
+  nuke
+  ```
+- `[WRN] : Could not complete checking build configurations within 500 milliseconds` 경고 메시지 제거하기
+  - 변경 전
+    ```cs
+    [CheckBuildProjectConfigurations]
+    ```
+  - 변경 후
+    ```cs
+    [CheckBuildProjectConfigurations(TimeoutInMilliseconds = 2000)]
+    ```
+- 복수 솔루션 파일 처리하기
+  - 변경 전
+    ```cs
+    [Solution()] readonly Solution Solution;
+    ```
+  - 변경 후
+    ```cs
+    [Solution("src1/Sample1.sln")] readonly Solution Solution1;
+    [Solution("src2/Sample2.sln")] readonly Solution Solution2;
+    ```
