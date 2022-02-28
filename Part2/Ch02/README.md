@@ -13,8 +13,7 @@
 ## Nuke란?
 - .NET 솔루션 빌드 자동화를 제공하기 위해 C# 도메인 특화 언어(DSL : Domain-Specific Language)입니다.  
   `The cross-platform build automation solution for .NET with C# DSL.`  
-- 빌드 자동화를 위한 스크립트를 도메인 지식(빌드) 중심으로 작성합니다.
-- 도메인 지식(빌드)에 집중할 수 있도록 C# 클래스를 제공합니다.
+- 도메인 지식(빌드)에 집중할 수 있는 환경(언어 : 클래스, 도구 : VS, VSCode, ...)을 제공합니다.
 
 ## Nuke 사용 목적
 - 빌드를 코드로 문서화(자동화)한다.
