@@ -183,3 +183,7 @@ Log.Information("로그 출력");
     [Solution("src1/Sample1.sln")] readonly Solution Solution1;
     [Solution("src2/Sample2.sln")] readonly Solution Solution2;
     ```
+
+## 참고 동영상
+- [Nuke — Designing a Build System with IDE Support in Mind](https://www.youtube.com/watch?v=N57Zjb5-08I)
+- [NUKE - C# Build Automation System - Overview & Tutorial](https://www.youtube.com/watch?v=V5m4yPMjCtY)
