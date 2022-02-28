@@ -1,8 +1,18 @@
+## 목차
+- Nuke란
+- Nuke 사용 목적
+- Nuke 설치
+- Nuke 빌드 프로젝트 생성
+
 ## Nuke란?
 - `The cross-platform build automation solution for .NET with C# DSL.`  
   .NET 솔루션 빌드 자동화를 제공하기 위해 C# 기반으로 개발된 도메인 특화 언어(DSL : Domain-Specific Language)입니다.
 - 빌드 자동화를 위한 스크립트를 도메인 지식(빌드) 중심으로 작성합니다.
 - 도메인 지식(빌드)에 집중할 수 있도록 C# 클래스를 제공합니다.
+
+## Nuke 사용 목적
+- GitLab과 GitHub 등 외부 CI 의존성을 최소화시킨다.
+- CI 서버와 Local 빌드를 통일 시킨다.
  
 ## Nuke 설치
 - .NET Tool 설치
@@ -73,8 +83,47 @@ Do you use GitVersion?
 »  Yes, just not setup yet
    No, custom versioning   
 ```
+- 자동으로 생성되는 파일 목록
+  - `build` 폴더 : build 소스 폴더
+  - `build.cmd` 파일 : build.ps1 실행을 위한 파일
+  - `build.ps1` 파일 : Windows에서 build 프로젝트 실행을 위한 스크립트 파일
+  - `build.sh` 파일 : Linux에서 build 프로젝트 실행을 위한 스크립트 파일
+  - `.nuke` : nuke 관리 폴더
 
-## Nuek FAQ
+## Nuke 소수 구성
+```cs
+// 실행 Target 지정
+public static int Main () => Execute<Build>(x => x.Compile);
+
+// 솔루션 파일
+[Solution] readonly Solution Solution;
+
+// IsServerBuild
+// IsLocalBuild
+readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
+
+Target Clean => _ => _
+    .Before(Restore)
+    .Executes(() =>
+    {
+        // ...    
+    });
+
+Target Restore => _ => _
+    .Executes(() =>
+    {
+        // ...
+    });
+
+Target Compile => _ => _
+    .DependsOn(Restore)
+    .Executes(() =>
+    {
+        // ...
+    });
+```
+
+## Nuke FAQ
 - 빌드 코드의 IntelliSense가 정상동작하지 않을 때
   - `./build` 프로젝트 위치에서 VSCode 열기한다.
   - `./build` 프로젝트 위치에서 VSCode을 열면 정상적으로 `IntelliSense`가 동작한다.
@@ -82,9 +131,11 @@ Do you use GitVersion?
   ```shell
   # Case 1. 파일 실행
   ./build.cmd
+  ./build.cmd --configuation Release
   
   # Case 2. Nuke 실행
   nuke
+  nuke --configuation Release
   ```
 - `[WRN] : Could not complete checking build configurations within 500 milliseconds` 경고 메시지 제거하기
   - 변경 전
