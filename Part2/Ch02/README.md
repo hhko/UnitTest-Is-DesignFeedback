@@ -1,12 +1,12 @@
 # Nuke 빌드 자동화 구현
 
 
-| CoverletOutputFormat  | 파일 이름               |
-|-----------------------|------------------------|
-| json                  | coverage.json          |
-| lcov                  | coverage.info          |
-| cobertura             | coverage.cobertura.xml |
-| opencover             | coverage.opencover.xml |
+| 출력 형식       | 파일 이름               |
+|----------------|------------------------|
+| json           | coverage.json          |
+| lcov           | coverage.info          |
+| cobertura      | coverage.cobertura.xml |
+| opencover      | coverage.opencover.xml |
 
 ```shell
 # 1. 패키지 복원
@@ -58,21 +58,6 @@ reportgenerator `
 //    - MS 오픈소스?
 //    - MSBuild .edit...?
 ```
-- .NET Tool 연동 이해 : ReportGenerator
-- .NET Tool 연동 이해 : Class Diagram 생성
-- Clean 이전 파일 삭제
-
-## 목차
-- Nuke란
-- Nuke 사용 목적
-- Nuke 설치
-- Nuke 빌드 프로젝트 생성
-- Nuke 소스 구성
-  - Parameter 추가
-  - 로그 출력
-- Nuke 명령
-- Nuke FAQ
-- 참고 동영상
 
 ## Nuke란?
 - .NET 솔루션 빌드 자동화를 제공하기 위해 C# 도메인 특화 언어(DSL : Domain-Specific Language)입니다.  
@@ -308,6 +293,83 @@ dotnet test ...3.csproj /p:CollectCoverage=true  /p:CoverletOutput="../CoverageR
     [Solution("src1/Sample1.sln")] readonly Solution Solution1;
     [Solution("src2/Sample2.sln")] readonly Solution Solution2;
     ```
+- 패키지 미싱
+  ```
+  System.ApplicationException: Missing package reference/download.
+  Run one of the following commands:
+    - nuke :add-package coverlet.console --version 3.1.2
+   ---> System.ArgumentException: Could not find package 'coverlet.console' using:
+  ```
+  ```
+  System.ApplicationException: Missing package reference/download.
+  Run one of the following commands:
+    - nuke :add-package ReportGenerator --version 5.0.4
+   ---> System.ArgumentException: Could not find package 'ReportGenerator' using:
+  ```
+  - 변경 전
+  - 변경 후
+    ```xml
+    <ItemGroup>
+      <PackageReference Include="Nuke.Common" Version="6.0.1" />
+      <PackageReference Include="plantumlclassdiagramgenerator" Version="1.2.4" />
+      <PackageReference Include="ReportGenerator" Version="5.0.4" />
+    </ItemGroup>
+    ```
+- 패키지 호환성
+  ```
+  C:\Temp\dotnet-ci\build\_build.csproj : error NU1202: coverlet.console 3.1.2 패키지가 net6.0(.NETCoreApp,Version=v6.0)과(와) 호환되지 않습니다.
+                                          coverlet.console 3.1.2 패키지는 다음을 지원합니다. net5.0(.NETCoreApp,Version=v5.0) / any
+  C:\Temp\dotnet-ci\build\_build.csproj : error NU1212: coverlet.console 3.1.2에 대한 잘못된 프로젝트-패키지 조합입니다.
+                                          DotnetToolReference 프로젝트 스타일에는 DotnetTool 형식의 참조만 포함할 수 있습니다.
+  ```
+  ```
+  C:\ ... \_build.csproj : error NU1202: GitVersion.Tool 5.8.2 패키지가 net6.0(.NETCoreApp,Version=v6.0)과(와) 호환되지 않습니다.
+                           GitVersion.Tool 5.8.2 패키지는 다음을 지원합니다.
+  C:\ ... \_build.csproj : error NU1202:   - net5.0(.NETCoreApp,Version=v5.0) / any
+  C:\ ... \_build.csproj : error NU1202:   - net6.0(.NETCoreApp,Version=v6.0) / any
+  C:\ ... \_build.csproj : error NU1202:   - netcoreapp3.1(.NETCoreApp,Version=v3.1) / any
+  C:\ ... \_build.csproj : error NU1212: GitVersion.Tool 5.8.2에 대한 잘못된 프로젝트-패키지 조합입니다.
+                           DotnetToolReference 프로젝트 스타일에는 DotnetTool 형식의 참조만 포함할 수 있습니다.
+  ```
+  - 변경 전
+    ```xml
+    <PackageReference Include="plantumlclassdiagramgenerator" Version="1.2.4" />
+    ```
+  - 변경 후
+    ```xml
+    <PackageReference Include="plantumlclassdiagramgenerator" Version="1.2.4">
+      <ExcludeAssets>all</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="GitVersion.Tool" Version="5.8.2">
+      <ExcludeAssets>all</ExcludeAssets>
+    </PackageReference>
+    ```
+    - `<ExcludeAssets>all</ExcludeAssets>` : TODO
+    - `<IncludeAssets>runtime</IncludeAssets>` : TODO
+    - `<PrivateAssets>all</PrivateAssets>` : TODO
+- 패키지 찾기 실패
+  ```
+  19:09:10 [WRN] Exception has been thrown by the target of an invocation.
+  System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+   ---> System.ArgumentException: Could not find 'puml-gen.exe' inside 'C:\ ... \plantumlclassdiagramgenerator\1.2.4' (Parameter 'packageExecutablePaths')
+  ```
+  - 변경 전
+  - 변경 후
+    - TODO?
+- 임의 Tool
+  - 변경 전
+  - 변경 후
+    - TODO? : .NET Tool 연동 이해 : Class Diagram 생성
+
+## 참고 자료
+- [Escalating Automation - The Nuclear Option](https://blog.dangl.me/archive/escalating-automation-the-nuclear-option/)
+- [Cross-platform Build Automation with Nuke](https://dev.to/damikun/the-cross-platform-build-automation-with-nuke-1kmc)
+
+## 참고 소스
+- [LibHac](https://github.com/Thealexbarney/LibHac/blob/master/build/Build.cs)
+- [Singularity](https://github.com/Barsonax/Singularity/blob/master/_build/Build.cs)
+- [Eventfully](https://github.com/cfrenzel/Eventfully/blob/master/build/Build.cs)
+- [LogExpert](https://github.com/zarunbal/LogExpert/blob/master/build/Build.cs)
 
 ## 참고 동영상
 - [Nuke — Designing a Build System with IDE Support in Mind](https://www.youtube.com/watch?v=N57Zjb5-08I)
