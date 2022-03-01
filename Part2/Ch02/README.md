@@ -375,3 +375,21 @@ dotnet test ...3.csproj /p:CollectCoverage=true  /p:CoverletOutput="../CoverageR
 - [Nuke — Designing a Build System with IDE Support in Mind](https://www.youtube.com/watch?v=N57Zjb5-08I)
 - [NUKE - C# Build Automation System - Overview & Tutorial](https://www.youtube.com/watch?v=V5m4yPMjCtY)
 - [NUKE: Build automation for C# developers](https://www.youtube.com/watch?v=7gEqxzD6hbs)
+
+## TODO
+| 구분 | 빌드 | nuke | Gitlab CI | Github CI |
+| --- | --- | --- | --- | --- |
+| 프로젝트 단위 테스트            |  |  |  |  |
+| 프로젝트 단위 테스트 Merge-With |  |  |  |  |
+- plantumlclassdiagramgenerator : `puml-gen . ./uml -dir -allInOne -excludePaths Properties,build`
+- .editorconfig
+- [Cannot use EF6.exe nuget tool](https://github.com/nuke-build/nuke/issues/484)
+  ```cs
+  [LocalExecutable(@"%USERPROFILE%\.dotnet\tools\puml-gen.exe")]
+  readonly Tool Puml;
+  ```
+  ```
+  22:15:59 [WRN] Exception has been thrown by the target of an invocation.
+  System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+   ---> System.ArgumentException: Expected file to exist: C:\Temp\dotnet-ci\%USERPROFILE%\.dotnet\tools\puml-gen.exe (Parameter 'toolPath')
+  ```
