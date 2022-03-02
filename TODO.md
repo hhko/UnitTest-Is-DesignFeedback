@@ -117,6 +117,7 @@ dotnet test -c Release
   dotnet sln list | ForEach-Object {dotnet add $_ package JunitXml.TestLogger}
   ```
 
+```
 .\gitlab-runner.exe register `
    --non-interactive `
    --url "http://wish.mirero.co.kr/" `
@@ -125,3 +126,4 @@ dotnet test -c Release
    --tag-list "win" `
    --executor "shell" `
    --shell "powershell"
+```
