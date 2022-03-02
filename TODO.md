@@ -49,6 +49,8 @@
   - [ ] EFCore in Action 책, 테스트 장단점 비교 : [New features for testing your Entity Framework Core 5 and above](https://www.thereformedprogrammer.net/new-features-for-unit-testing-your-entity-framework-core-5-code/)
 - xUnit
   - [ ] xUnit C# 예제 코드 : [amples.xunit](https://github.com/xunit/samples.xunit)  
+- PostgreSQL
+  - [ ] 콘솔로 데이터베이스 만들기 : [https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx](https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx) 
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
