@@ -61,22 +61,20 @@
 
 ### Part 3. 단위 테스트 패키지 이해하기
 #### Chapter 1. 단위 테스트 패키지 xUnit
-> Instance 공유
+> 단위 테스트 인스턴스 공유
 - [x] Step 01. 클래스 IDisposable([구현](./Part3/Ch01/Step01/))
 - [x] Step 02. 클래스 단위 공유 IClassFixture([구현](./Part3/Ch01/Step02/))
 - [ ] Step 03. 어셈블리 단위 공유 Attribute([구현](./Part3/Ch01/Step03/))
 - [ ] Step 04. 컬랙션 단위 공유 CollectionFixtureSetupTeardown([구현](./Part3/Ch01/Step04/))
----
-> 순서
+> 단위 테스트 실행 순서
 - [x] Step 05. Fact 단위 순서(알파벳) ITestCaseOrderer, TestCaseOrderer([구현](./Part3/Ch01/Step05/))
 - [x] Step 06. Fact 단위 순서(중요도) ITestCaseOrderer, TestCaseOrderer, Attribute([구현](./Part3/Ch01/Step06/))
 - [ ] Step 07. 컬랙션 단위 순서([구현](./Part3/Ch01/Step07/))
----
+> TODO
 - Lifecycle
 - 내부 N개 입력
-- 외부 N개 입력
+- 외부 N개 입력 : CSV, DB
 - 데이터 공유
-- 순서 지정
 - 직렬 실행
 - 대기 최대 시간
 - xUnit 인터페이스
