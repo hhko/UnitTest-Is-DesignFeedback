@@ -47,6 +47,8 @@
   - [ ] PostgreSQL 통합 테스트 : [PostgreSQL Integration Testing in .NET Core](https://ufukhaciogullari.com/blog/postgresql-integration-testing-in-net-core/)
   - [ ] EFCore in Action 책 : [Using PostgreSQL in dev: Part 2 – Testing against a PostgreSQL database](https://www.thereformedprogrammer.net/using-postgresql-in-dev-part-2-testing-against-a-postgresql-database/)
   - [ ] EFCore in Action 책, 테스트 장단점 비교 : [New features for testing your Entity Framework Core 5 and above](https://www.thereformedprogrammer.net/new-features-for-unit-testing-your-entity-framework-core-5-code/)
+- xUnit
+  - [ ] xUnit C# 예제 코드 : [amples.xunit](https://github.com/xunit/samples.xunit)  
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
