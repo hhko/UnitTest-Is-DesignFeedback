@@ -38,9 +38,9 @@
 - [x] Step 04. 단위 테스트 디버깅([구현](./Part2/Ch01/Step04/))
 - [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part2/Ch01/Step05/))
 - [x] Step 06. 단위 테스트 출력([구현](./Part2/Ch01/Step06/))
-- [x] Step 07. 단위 테스트 격리 실행([구현](./Part2/Ch01/Step07/))
+- [x] Step 07. 단위 테스트 독립 실행([구현](./Part2/Ch01/Step07/))
 - [x] Step 08. 단위 테스트 병렬 실행([구현](./Part2/Ch01/Step08/))
-- [x] Step 09. 단위 테스트 구현 패턴([구현](./Part2/Ch01/Step09/))
+- [x] Step 09. 단위 테스트 3A 패턴([구현](./Part2/Ch01/Step09/))
 - [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part2/Ch01/Step10/))
 
 #### Chapter 2. 코드 커버리지
