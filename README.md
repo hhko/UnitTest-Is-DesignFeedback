@@ -60,8 +60,18 @@
 ---
 
 ### Part 3. 단위 테스트 패키지 이해하기
-#### Chapter 4. 단위 테스트 패키지 xUnit
-- 설정
+#### Chapter 1. 단위 테스트 패키지 xUnit
+> Instance 공유
+- [x] Step 01. 클래스 IDisposable([구현](./Part3/Ch01/Step01/))
+- [x] Step 02. 클래스 단위 공유 IClassFixture([구현](./Part3/Ch01/Step02/))
+- [ ] Step 03. 어셈블리 단위 공유 Attribute([구현](./Part3/Ch01/Step03/))
+- [ ] Step 04. 컬랙션 단위 공유 CollectionFixtureSetupTeardown([구현](./Part3/Ch01/Step04/))
+---
+> 순서
+- [x] Step 05. Fact 단위 순서(알파벳) ITestCaseOrderer, TestCaseOrderer([구현](./Part3/Ch01/Step05/))
+- [x] Step 06. Fact 단위 순서(중요도) ITestCaseOrderer, TestCaseOrderer, Attribute([구현](./Part3/Ch01/Step06/))
+- [ ] Step 07. 컬랙션 단위 순서([구현](./Part3/Ch01/Step07/))
+---
 - Lifecycle
 - 내부 N개 입력
 - 외부 N개 입력
@@ -71,13 +81,13 @@
 - 대기 최대 시간
 - xUnit 인터페이스
 
-#### Chapter 5. Arrange 단위 테스트 패키지 AutoFixture
+#### Chapter 2. Arrange 단위 테스트 패키지 AutoFixture
 - 생성자 변화
 - 임의 데이터
 
-#### Chapter 6. Mutation 단위 테스트 패키지 Stryker.NET
+#### Chapter 3. Mutation 단위 테스트 패키지 Stryker.NET
 
-#### Chapter 7. Architecture 단위 테스트 패키지 ArchiUnitNET
+#### Chapter 4. Architecture 단위 테스트 패키지 ArchiUnitNET
 - 의존성 검증
 
 ---
