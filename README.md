@@ -6,8 +6,8 @@
 > - [Software engineer **Kent Beck** stated in 2003 that TDD encourages **simple designs** and inspires **confidence**.](https://en.wikipedia.org/wiki/Test-driven_development)
 
 - 단위 테스트는 **설계 피드백이다.**
-  - 단순한 설계 : 단위 테스트는 "지속 가능한 성장을 위한 설계(분업과 협업)"을 강요한다.
-  - 자신감 : 단위 테스트는 "설계 결과"을 검증할 수 있어 지속적으로 "설계 개선(리팩토링)"을 할 수 있다.
+  - **단순한 설계** : 단위 테스트는 "지속 가능한 성장을 위한 설계(분업과 협업)"을 강요한다.
+  - **자신감** : 단위 테스트는 "설계 결과"을 검증할 수 있어 지속적으로 "설계 개선(리팩토링)"을 할 수 있다.
 
 ## 목표
 - 지속 가능한 성장을 위한 **설계를** 구현하고 검증할 수 있다.
@@ -129,7 +129,11 @@
 
 #### Chapter ?. 도메인 주도 설계
 
+#### Chapter ?. 디자인 패턴
+
 #### Chapter ?. 클린 아키텍처
+
+#### Chapter ?. 아키텍처 패턴
 
 ---
 
