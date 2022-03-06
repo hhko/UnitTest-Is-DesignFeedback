@@ -70,6 +70,13 @@
 - [x] Step 05. Fact 단위 순서(알파벳) ITestCaseOrderer, TestCaseOrderer([구현](./Part3/Ch01/Step05/))
 - [x] Step 06. Fact 단위 순서(중요도) ITestCaseOrderer, TestCaseOrderer, Attribute([구현](./Part3/Ch01/Step06/))
 - [ ] Step 07. 컬랙션 단위 순서([구현](./Part3/Ch01/Step07/))
+> Data-Driven
+- [ ] MemberData
+- [ ] ClassData
+- [ ] InlineData
+- [ ] DataAttribute : CSV
+- [ ] DataAttribute : Excel
+- [ ] DataAttribute : SQL
 > TODO
 - 개요 : 개별 실행(Lifecycle), 로그 출력
 - 내부 N개 입력

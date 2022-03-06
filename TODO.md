@@ -50,7 +50,16 @@
   - [ ] [Shared Context between Tests](https://xunit.net/docs/shared-context)
   - [ ] [samples.xunit](https://github.com/xunit/samples.xunit)
   - [ ] [Capturing Output](https://xunit.net/docs/capturing-output)
-  - [ ] [Running xUnit.net tests in MSBuild](https://xunit.net/docs/running-tests-in-msbuild) 
+  - [ ] [Running xUnit.net tests in MSBuild](https://xunit.net/docs/running-tests-in-msbuild)
+- Data-Driven
+  - [ ] MemberData와 DataAttribute 예제 : [Writing Data Driven Tests using xUnit](https://ikeptwalking.com/writing-data-driven-tests-using-xunit/)
+  - [ ]
+    - [InlineDataAttribute](https://github.com/xunit/xunit/blob/master/src/xunit.core/InlineDataAttribute.cs)
+    - [ClassDataAttribute](https://github.com/xunit/xunit/blob/master/src/xunit.core/ClassDataAttribute.cs)
+    - [MemberDataAttribute](https://github.com/xunit/xunit/blob/master/src/xunit.core/MemberDataAttribute.cs)
+  - [ ] Excel : [samples.xunit/ExcelDataExample](https://github.com/xunit/samples.xunit/tree/0c8ef4e4291b0ddc98469ad1317d3ad0c7904ce7/ExcelDataExample)
+  - [ ] SQL : [samples.xunit/SqlDataExample](https://github.com/xunit/samples.xunit/tree/0c8ef4e4291b0ddc98469ad1317d3ad0c7904ce7/SqlDataExample)
+  - [ ] CSV : [How to run XUnit test using data from a CSV file](https://stackoverflow.com/questions/42727394/how-to-run-xunit-test-using-data-from-a-csv-file)
 
 ### EF Core
 - [ ] 콘솔로 데이터베이스 만들기 : [https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx](https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx) 
