@@ -60,6 +60,7 @@
   - [ ] Excel : [samples.xunit/ExcelDataExample](https://github.com/xunit/samples.xunit/tree/0c8ef4e4291b0ddc98469ad1317d3ad0c7904ce7/ExcelDataExample)
   - [ ] SQL : [samples.xunit/SqlDataExample](https://github.com/xunit/samples.xunit/tree/0c8ef4e4291b0ddc98469ad1317d3ad0c7904ce7/SqlDataExample)
   - [ ] CSV : [How to run XUnit test using data from a CSV file](https://stackoverflow.com/questions/42727394/how-to-run-xunit-test-using-data-from-a-csv-file)
+  - [ ] JSON : [Creating a custom xUnit theory test DataAttribute to load data from JSON files](https://andrewlock.net/creating-a-custom-xunit-theory-test-dataattribute-to-load-data-from-json-files/)
 
 ### EF Core
 - [ ] 콘솔로 데이터베이스 만들기 : [https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx](https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx) 
