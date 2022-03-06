@@ -28,7 +28,7 @@
 - [ ] Step 03. Visual Studio Code tasks.json 파일
 - [ ] Step 04. Visual Studio Code launch.json 파일
 
-#### Chapter 3. .NET Tool
+#### Chapter 3. .NET 도구
 - [ ] Step 01. .NET 도구 명령
 - [x] Step 02. .NET 도구([문서](./Part1/Ch03/Step02/))
 
@@ -133,7 +133,7 @@
 
 <br/>
 
-### Part 5. 설폐 피드백하기
+### Part 5. 객체지향 설계하기
 #### Chapter ?. 설계 원칙
 - [ ] 분업(캡슐화 : 역할과 책임)
 - [ ] 협업(의존성 : 상속과 위임)
@@ -155,7 +155,14 @@
 
 <br/>
 
-### Part 6. 프로젝트
+### Part 6. 마이크로서비스 설계하기
+#### Chapter ?. Docker
+
+#### Chapter ?. Dapr
+
+<br/>
+
+### Part 7. 프로젝트
 #### Chapter ?. Password Validation
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris
