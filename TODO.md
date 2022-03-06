@@ -56,6 +56,9 @@
 - [ ] 콘솔로 데이터베이스 만들기 : [https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx](https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx) 
 - [ ] 콘솔로 데이터베이스 만들기 : [Getting Started With Entity Framework Core - Console](https://www.learnentityframeworkcore.com/walkthroughs/console-application)
 
+## Grafana
+- [ ] Grafana 전용 SQL 이해 : [compose-postgresql-grafana](https://github.com/Preetam/compose-postgresql-grafana)
+
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit
   - [ ] [xRetry](https://github.com/JoshKeegan/xRetry)

@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:${POSTGRES_IMAGE_VERSION}
+    container_name: postgres_ef
+    environment:
+      POSTGRES_USER: postgres     # define credentials
+      POSTGRES_PASSWORD: postgres # define credentials
+      POSTGRES_DB: postgres       # define database
+    ports:
+      - 5432:5432                 # Postgres port
+    # healthcheck:
+    #   test: ["CMD", "psql", "-U", "postgres", "grafana", "-c", "select 1;"]
+    #   interval: 5s
+    #   timeout: 3s
+    #   retries: 3
+    volumes:
+      - ./postgres/entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      # - postgres:/var/lib/postgresql/data
+    # networks:
+    #   - postgres
+
+# volumes:
+#   postgres:
+
+# networks:
+#   postgres:
+#     driver: bridge
+

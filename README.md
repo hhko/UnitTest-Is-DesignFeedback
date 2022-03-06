@@ -30,6 +30,7 @@
 - [ ] Step 01. .NET 도구 명령
 - [x] Step 02. .NET 도구([문서](./Part1/Ch03/Step02/))
 
+
 ### Part 2. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
 - [x] Step 01. 단위 테스트 구성([구현](./Part2/Ch01/Step01/))
@@ -57,7 +58,6 @@
 - [ ] GitLab 빌드
 - [ ] GitLab 코드 커버리지
 
----
 
 ### Part 3. 단위 테스트 패키지 이해하기
 #### Chapter 1. 단위 테스트 패키지 xUnit
@@ -89,7 +89,6 @@
 #### Chapter 4. Architecture 단위 테스트 패키지 ArchiUnitNET
 - 의존성 검증
 
----
 
 ### Part 4. 통합 테스트 패키지 이해하기
 #### Chapter ?. Console 통합 테스트 패키지 CliWrap
@@ -117,7 +116,6 @@
 
 #### Chapter ?. Database 통합 테스트 패키지 Respawn
 
----
 
 ### Part 5. 설폐 피드백하기
 #### Chapter ?. 설계 원칙
@@ -131,7 +129,6 @@
 
 #### Chapter ?. 클린 아키텍처
 
----
 
 ### Part 6. 프로젝트
 #### Chapter ?. Password Validation
@@ -139,3 +136,8 @@
 #### Chapter ?. Tetris
 #### Chapter ?. eShop
 #### Chaprer ?. ?
+
+
+### Appendix
+#### DockerCompose
+- [x] PostgreSQL([구현](./Appdix/dockers/postgresql/))
