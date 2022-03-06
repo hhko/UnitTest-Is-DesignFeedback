@@ -81,6 +81,7 @@
 - [ ] DataAttribute : CSV
 - [ ] DataAttribute : Excel
 - [ ] DataAttribute : SQL
+- [ ] DataAttribute : Json
 > TODO
 - 개요 : 개별 실행(Lifecycle), 로그 출력
 - 내부 N개 입력
