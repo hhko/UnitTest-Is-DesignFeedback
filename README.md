@@ -105,14 +105,15 @@
 <br/>
 
 ### Part 4. 통합 테스트 패키지 이해하기
-#### Chapter ?. Console 통합 테스트 패키지 CliWrap
+#### Chapter 1. Behaviour 통합 테스트 패키지 Specflow
+- [x] Step 01. Specflow 템플릿 설치([구현](./Part4/Ch01/Step01/))
 
-#### Chapter ?. Container 통합 테스트 패키지 DotNet.Testcontainers
-- [x] Step 01. WebAPI 호스트 디버깅([구현](./Part4/Ch01/Step01/))
-- [x] Step 02. WebAPI 컨테이너 디버깅([구현](./Part4/Ch01/Step02/))
-- [x] Step 03. Console 컨테이너 디버깅([구현](./Part4/Ch01/Step03/))
+#### Chapter 2. Console 통합 테스트 패키지 CliWrap
 
-#### Chapter ?. Behaviour 통합 테스트 패키지 Specflow
+#### Chapter 3. Container 통합 테스트 패키지 DotNet.Testcontainers
+- [x] Step 01. WebAPI 호스트 디버깅([구현](./Part4/Ch03/Step01/))
+- [x] Step 02. WebAPI 컨테이너 디버깅([구현](./Part4/Ch03/Step02/))
+- [x] Step 03. Console 컨테이너 디버깅([구현](./Part4/Ch03/Step03/))
 
 #### Chapter ?. Performance 통합 테스트 패키지 NBench
 

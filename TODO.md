@@ -66,8 +66,18 @@
 - [ ] 콘솔로 데이터베이스 만들기 : [https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx](https://www.entityframeworktutorial.net/efcore/entity-framework-core-console-application.aspx) 
 - [ ] 콘솔로 데이터베이스 만들기 : [Getting Started With Entity Framework Core - Console](https://www.learnentityframeworkcore.com/walkthroughs/console-application)
 
+## Specflow
+- [ ] Specflow 튜토리얼 : [Specflow Tutorial, The Ultimate Guide To BDD Tool](https://www.softwaretestinghelp.com/specflow-tutorial/)
+
 ## Grafana
 - [ ] Grafana 전용 SQL 이해 : [compose-postgresql-grafana](https://github.com/Preetam/compose-postgresql-grafana)
+
+## VSCode 확장 도구
+- https://marketplace.visualstudio.com/items?itemName=aliasadidev.nugetpackagemanagergui
+
+## .NET 도구
+- https://nukeeper.com/
+  - https://stackoverflow.com/questions/41080749/how-do-i-update-all-nuget-packages-at-once-with-the-dotnet-cli
 
 ## 단위 테스트 패키지
 - [x] 단위 테스트 | xUnit

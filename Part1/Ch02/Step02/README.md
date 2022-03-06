@@ -8,7 +8,7 @@
 
 ## 프로그래밍 언어
 - C#([링크](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp))
-- vscode-solution-explorer([링크](https://marketplace.visualstudio.com/items?itemName=fernandoescolar.vscode-solution-explorer))
+  - vscode-solution-explorer([링크](https://marketplace.visualstudio.com/items?itemName=fernandoescolar.vscode-solution-explorer))
 
 ## 테스트
 - .NET Core Test Explorer([링크](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer))
@@ -19,4 +19,4 @@
 - Nuke support([링크](https://marketplace.visualstudio.com/items?itemName=nuke.support))
 
 ## 설계
-- PlantUML?
+- PlantUML Previewer([링크](https://github.com/mebrahtom/plantumlpreviewer))
