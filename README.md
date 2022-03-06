@@ -154,7 +154,14 @@
 
 <br/>
 
-### Part 6. 프로젝트
+### Part 6. 마이크로서비스 설계하기
+#### Chapter ?. Docker
+
+#### Chapter ?. Dapr
+
+<br/>
+
+### Part 7. 프로젝트
 #### Chapter ?. Password Validation
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris
