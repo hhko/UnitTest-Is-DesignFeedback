@@ -83,12 +83,13 @@
 - [ ] DataAttribute : SQL
 - [ ] DataAttribute : Json
 > TODO
-- 개요 : 개별 실행(Lifecycle), 로그 출력
-- 내부 N개 입력
-- 외부 N개 입력 : CSV, DB
-- 데이터 공유
-- 직렬 실행
-- 병렬 실행
+- ~~개요 : 개별 실행(Lifecycle), 로그 출력~~
+- ~~내부 N개 입력~~
+- ~~외부 N개 입력 : CSV, DB~~
+- ~~데이터 공유~~
+- ~~직렬 실행~~
+- ~~병렬 실행~~
+- 이름
 - 대기 최대 시간
 - xUnit 인터페이스
 
