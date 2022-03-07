@@ -107,6 +107,7 @@
 ### Part 4. 통합 테스트 패키지 이해하기
 #### Chapter 1. Behaviour 통합 테스트 패키지 Specflow
 - [x] Step 01. Specflow 템플릿 설치([구현](./Part4/Ch01/Step01/))
+- [x] Step 02. Specflow 디버깅([구현](./Part4/Ch01/Step02/))
 
 #### Chapter 2. Console 통합 테스트 패키지 CliWrap
 

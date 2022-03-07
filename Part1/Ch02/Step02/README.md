@@ -5,6 +5,7 @@
 - Paste Image([링크](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image))
 - Bookmarks([링크](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks))
 - Peek Hidden Files([링크](https://marketplace.visualstudio.com/items?itemName=adrianwilczynski.toggle-hidden))
+- Code Spell Checker([링크](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker))
 
 ## 프로그래밍 언어
 - C#([링크](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp))
