@@ -164,7 +164,11 @@
 <br/>
 
 ### Part 7. 예제 프로젝트
-#### Chapter 1. Helloworld on Test Automation
+#### Chapter 1. Helloworld
+- [x] [구현](./Part7_Example/Ch01_Helloworld/)
+  - 순수 메서드(`Greeting`)와 비순수 메서드(`I/O`) 구분하기
+  - 단위 테스트와 통합 테스트하기
+
 #### Chapter ?. Password Validation
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris

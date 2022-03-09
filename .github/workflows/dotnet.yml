@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 env:
-  SOLUTION_FILE_PATH: ./Part2/Ch02/Step01/MultipleUnitTests.sln
+  SOLUTION_FILE_PATH: ./Part2_Foundation/Ch02/Step01/MultipleUnitTests.sln
   BUILD_CONFIGURATION: Release
 
 jobs:
