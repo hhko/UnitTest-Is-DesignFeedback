@@ -36,16 +36,16 @@
 
 ### Part 2. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
-- [x] Step 01. 단위 테스트 구성([구현](./Part2_Foundation/Ch01/Step01/))
-- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part2_Foundation/Ch01/Step02/))
-- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part2_Foundation/Ch01/Step03/))
-- [x] Step 04. 단위 테스트 디버깅([구현](./Part2_Foundation/Ch01/Step04/))
-- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part2_Foundation/Ch01/Step05/))
-- [x] Step 06. 단위 테스트 출력([구현](./Part2_Foundation/Ch01/Step06/))
-- [x] Step 07. 단위 테스트 독립 실행([구현](./Part2_Foundation/Ch01/Step07/))
-- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part2_Foundation/Ch01/Step08/))
-- [x] Step 09. 단위 테스트 3A 패턴([구현](./Part2_Foundation/Ch01/Step09/))
-- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part2_Foundation/Ch01/Step10/))
+- [x] Step 01. 단위 테스트 구성([구현](./Part2_Foundation/Ch01_UnitTest/Step01/))
+- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part2_Foundation/Ch01_UnitTest/Step02/))
+- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part2_Foundation/Ch01_UnitTest/Step03/))
+- [x] Step 04. 단위 테스트 디버깅([구현](./Part2_Foundation/Ch01_UnitTest/Step04/))
+- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part2_Foundation/Ch01_UnitTest/Step05/))
+- [x] Step 06. 단위 테스트 출력([구현](./Part2_Foundation/Ch01_UnitTest/Step06/))
+- [x] Step 07. 단위 테스트 독립 실행([구현](./Part2_Foundation/Ch01_UnitTest/Step07/))
+- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part2_Foundation/Ch01_UnitTest/Step08/))
+- [x] Step 09. 단위 테스트 3A 패턴([구현](./Part2_Foundation/Ch01_UnitTest/Step09/))
+- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part2_Foundation/Ch01_UnitTest/Step10/))
 
 #### Chapter 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
