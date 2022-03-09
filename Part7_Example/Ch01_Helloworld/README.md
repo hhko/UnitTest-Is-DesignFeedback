@@ -2,12 +2,16 @@
 
 ## 도구 설치
 ```shell
-# Nuke 도구 설치
-# https://nuke.build/docs/getting-started/setup.html
+#
+# 1. Nuke 도구 설치
+#    https://nuke.build/docs/getting-started/setup.html
+#
 dotnet tool install -g Nuke.GlobalTool
 
-# Visual Studio Code 확장 도구 설치
-# NUKE Support : https://marketplace.visualstudio.com/items?itemName=nuke.support
+#
+# 2. Visual Studio Code 확장 도구 설치
+#    NUKE Support : https://marketplace.visualstudio.com/items?itemName=nuke.support
+#
 ```
 
 ## 예제 구성 명령
@@ -125,8 +129,7 @@ public class Greeting
 }
 ```
 
-## 단위 테스트
-### 메모리 테스트
+## 단위 테스트 : 메모리 테스트
 ```cs
 public class GreetingSpec
 {
@@ -148,8 +151,7 @@ public class GreetingSpec
 }
 ```
 
-## 통합 테스트
-### 프로세스 테스트
+## 통합 테스트 : 프로세스 테스트
 ```cs
 public class HelloworldAppSpec
 {
