@@ -23,29 +23,29 @@
 - [ ] Step 02. .NET SDK 명령
 
 #### Chapter 2. Visual Studio Code
-- [x] Step 01. Visual Studio Code 설치([문서](./Part1/Ch02/Step01/))
-- [x] Step 02. Visual Studio Code 확장 도구([문서](./Part1/Ch02/Step02/))
+- [x] Step 01. Visual Studio Code 설치([문서](./Part1_Setup/Ch02/Step01/))
+- [x] Step 02. Visual Studio Code 확장 도구([문서](./Part1_Setup/Ch02/Step02/))
 - [ ] Step 03. Visual Studio Code tasks.json 파일
 - [ ] Step 04. Visual Studio Code launch.json 파일
 
 #### Chapter 3. .NET 도구
 - [ ] Step 01. .NET 도구 명령
-- [x] Step 02. .NET 도구([문서](./Part1/Ch03/Step02/))
+- [x] Step 02. .NET 도구([문서](./Part1_Setup/Ch03/Step02/))
 
 <br/>
 
 ### Part 2. 단위 테스트 기초 다지기
 #### Chapter 1. 단위 테스트
-- [x] Step 01. 단위 테스트 구성([구현](./Part2/Ch01/Step01/))
-- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part2/Ch01/Step02/))
-- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part2/Ch01/Step03/))
-- [x] Step 04. 단위 테스트 디버깅([구현](./Part2/Ch01/Step04/))
-- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part2/Ch01/Step05/))
-- [x] Step 06. 단위 테스트 출력([구현](./Part2/Ch01/Step06/))
-- [x] Step 07. 단위 테스트 독립 실행([구현](./Part2/Ch01/Step07/))
-- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part2/Ch01/Step08/))
-- [x] Step 09. 단위 테스트 3A 패턴([구현](./Part2/Ch01/Step09/))
-- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part2/Ch01/Step10/))
+- [x] Step 01. 단위 테스트 구성([구현](./Part2_Foundation/Ch01/Step01/))
+- [x] Step 02. 단위 테스트 VSCode 태스크([구현](./Part2_Foundation/Ch01/Step02/))
+- [x] Step 03. 단위 테스트 성공과 실패([구현](./Part2_Foundation/Ch01/Step03/))
+- [x] Step 04. 단위 테스트 디버깅([구현](./Part2_Foundation/Ch01/Step04/))
+- [x] Step 05. 단위 테스트 VSCode 확장 도구([구현](./Part2_Foundation/Ch01/Step05/))
+- [x] Step 06. 단위 테스트 출력([구현](./Part2_Foundation/Ch01/Step06/))
+- [x] Step 07. 단위 테스트 독립 실행([구현](./Part2_Foundation/Ch01/Step07/))
+- [x] Step 08. 단위 테스트 병렬 실행([구현](./Part2_Foundation/Ch01/Step08/))
+- [x] Step 09. 단위 테스트 3A 패턴([구현](./Part2_Foundation/Ch01/Step09/))
+- [x] Step 10. 단위 테스트 Fluent Assertion([구현](./Part2_Foundation/Ch01/Step10/))
 
 #### Chapter 2. 코드 커버리지
 - [ ] 코드 커버리지 단일 프로젝트 명령
@@ -66,14 +66,14 @@
 ### Part 3. 단위 테스트 패키지 이해하기
 #### Chapter 1. 단위 테스트 패키지 xUnit
 > [단위 테스트 인스턴스 공유 : Shared Context between Tests](https://xunit.net/docs/shared-context)
-- [x] Step 01. 클래스 IDisposable([구현](./Part3/Ch01/Step01/))
-- [x] Step 02. 클래스 단위 공유 IClassFixture([구현](./Part3/Ch01/Step02/))
-- [ ] Step 03. 어셈블리 단위 공유 Attribute([구현](./Part3/Ch01/Step03/))
-- [ ] Step 04. 컬랙션 단위 공유 CollectionFixtureSetupTeardown([구현](./Part3/Ch01/Step04/))
+- [x] Step 01. 클래스 IDisposable([구현](./Part3_UnitTest/Ch01/Step01/))
+- [x] Step 02. 클래스 단위 공유 IClassFixture([구현](./Part3_UnitTest/Ch01/Step02/))
+- [ ] Step 03. 어셈블리 단위 공유 Attribute([구현](./Part3_UnitTest/Ch01/Step03/))
+- [ ] Step 04. 컬랙션 단위 공유 CollectionFixtureSetupTeardown([구현](./Part3_UnitTest/Ch01/Step04/))
 > 단위 테스트 실행 순서
-- [x] Step 05. Fact 단위 순서(알파벳) ITestCaseOrderer, TestCaseOrderer([구현](./Part3/Ch01/Step05/))
-- [x] Step 06. Fact 단위 순서(중요도) ITestCaseOrderer, TestCaseOrderer, Attribute([구현](./Part3/Ch01/Step06/))
-- [ ] Step 07. 컬랙션 단위 순서([구현](./Part3/Ch01/Step07/))
+- [x] Step 05. Fact 단위 순서(알파벳) ITestCaseOrderer, TestCaseOrderer([구현](./Part3_UnitTest/Ch01/Step05/))
+- [x] Step 06. Fact 단위 순서(중요도) ITestCaseOrderer, TestCaseOrderer, Attribute([구현](./Part3_UnitTest/Ch01/Step06/))
+- [ ] Step 07. 컬랙션 단위 순서([구현](./Part3_UnitTest/Ch01/Step07/))
 > Data-Driven
 - [ ] MemberData
 - [ ] ClassData
@@ -106,15 +106,15 @@
 
 ### Part 4. 통합 테스트 패키지 이해하기
 #### Chapter 1. Behaviour 통합 테스트 패키지 Specflow
-- [x] Step 01. Specflow 템플릿 설치([구현](./Part4/Ch01/Step01/))
-- [x] Step 02. Specflow 디버깅([구현](./Part4/Ch01/Step02/))
+- [x] Step 01. Specflow 템플릿 설치([구현](./Part4_IntegrationTest/Ch01/Step01/))
+- [x] Step 02. Specflow 디버깅([구현](./Part4_IntegrationTest/Ch01/Step02/))
 
 #### Chapter 2. Console 통합 테스트 패키지 CliWrap
 
 #### Chapter 3. Container 통합 테스트 패키지 DotNet.Testcontainers
-- [x] Step 01. WebAPI 호스트 디버깅([구현](./Part4/Ch03/Step01/))
-- [x] Step 02. WebAPI 컨테이너 디버깅([구현](./Part4/Ch03/Step02/))
-- [x] Step 03. Console 컨테이너 디버깅([구현](./Part4/Ch03/Step03/))
+- [x] Step 01. WebAPI 호스트 디버깅([구현](./Part4_IntegrationTest/Ch03/Step01/))
+- [x] Step 02. WebAPI 컨테이너 디버깅([구현](./Part4_IntegrationTest/Ch03/Step02/))
+- [x] Step 03. Console 컨테이너 디버깅([구현](./Part4_IntegrationTest/Ch03/Step03/))
 
 #### Chapter ?. Performance 통합 테스트 패키지 NBench
 
@@ -163,7 +163,8 @@
 
 <br/>
 
-### Part 7. 프로젝트
+### Part 7. 예제 프로젝트
+#### Chapter 1. Helloworld on Test Automation
 #### Chapter ?. Password Validation
 #### Chapter ?. Tic Tac Toe
 #### Chapter ?. Tetris

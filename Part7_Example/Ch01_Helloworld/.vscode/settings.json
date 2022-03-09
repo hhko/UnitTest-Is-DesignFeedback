@@ -1,0 +1,16 @@
+{
+    "dotnet-test-explorer.testArguments": "/p:CollectCoverage=true /p:CoverletOutput=./TestResults/Coverage/ /p:CoverletOutputFormat=json%2clcov%2ccobertura%2copencover",
+    "dotnet-test-explorer.testProjectPath": "**\\*.*Test.csproj",
+    "dotnet-test-explorer.treeMode": "merged",
+    "coverage-gutters.showGutterCoverage": true,
+    "coverage-gutters.showLineCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
+    "coverage-gutters.coverageFileNames": [
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "jacoco.xml",
+        "coverage.info",
+        "coverage.cobertura.xml"
+    ]
+}
