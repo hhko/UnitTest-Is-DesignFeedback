@@ -129,7 +129,7 @@ public class Greeting
 }
 ```
 
-## 단위 테스트 : 메모리 테스트
+## 단위 테스트 : 순수 메소드의 메모리 테스트
 ```cs
 public class GreetingSpec
 {
@@ -151,7 +151,7 @@ public class GreetingSpec
 }
 ```
 
-## 통합 테스트 : 프로세스 테스트
+## 통합 테스트 : 순수와 비순수 메소드의 프로세스 테스트
 ```cs
 public class HelloworldAppSpec
 {
