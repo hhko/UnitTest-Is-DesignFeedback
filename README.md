@@ -165,8 +165,9 @@
 
 ### Part 7. 예제 프로젝트
 #### Chapter 1. Helloworld([구현](./Part7_Example/Ch01_Helloworld/))
-- [x] 순수 메서드(`Greeting`)와 비순수 메서드(`I/O`) 구분하기
-- [x] 단위 테스트와 통합 테스트하기
+- [x] 순수 메서드(`Greeting`)와 비순수 메서드(`I/O`) 구분
+- [x] 단위 테스트 : 순수 메서드의 메모리 테스트
+- [x] 통합 테스트 : 순수와 비순수 메서드의 프로세스 테스트
 
 #### Chapter ?. Password Validation
 #### Chapter ?. Tic Tac Toe

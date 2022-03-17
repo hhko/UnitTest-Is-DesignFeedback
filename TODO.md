@@ -100,6 +100,7 @@
 - [ ] 로그 | Serilog.Sinks.InMemory
 ---
 - [ ] WebAPI | WireMock.NET
+- [ ] WebAPI | HttpClient Interception
 - [ ] WebUI | Playwright-dotnet
 - [ ] WebUI | bUnit
 - [ ] 성능 | NBomber
