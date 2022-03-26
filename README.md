@@ -182,4 +182,4 @@
 - [x] PostgreSQL([구현](./Appdix/dockers/postgresql/))
 
 #### Book
-- 객체지향 사실과 오해([링크](./Appdix/Book/OOFactAndMisunderstanding))
+- 객체지향 사실과 오해([링크](./Appdix/Book/OOFactAndMisunderstanding/README.md))
