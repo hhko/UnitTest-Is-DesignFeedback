@@ -11,12 +11,12 @@
 dotnet tool install -g dotnet-ef
 
 # C# 코드 생성 : dotnet-ef migrations add [이름]
-dotnet-ef migrations add CreateDatabase --project .\HelloEFCore\
-dotnet-ef migrations list
-dotnet-ef migrations remove ..?
+dotnet ef migrations add CreateDatabase --project .\HelloEFCore\
+dotnet ef migrations list
+dotnet ef migrations remove ..?
 
 # DB 스키마 생성
-dotnet-ef database update --project .\HelloEFCore\
+dotnet ef database update --project .\HelloEFCore\
 dotnet ef database drop?
 
 # Database First
