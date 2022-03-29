@@ -7,9 +7,14 @@
 
 ## dotnet ef 도구
 ```shell
+#
 # 도구 설치
+#
 dotnet tool install -g dotnet-ef
 
+#
+# Code-First
+#
 # C# 코드 생성 : dotnet-ef migrations add [이름]
 dotnet ef migrations add CreateDatabase --project .\HelloEFCore\
 dotnet ef migrations list
@@ -19,7 +24,9 @@ dotnet ef migrations remove ..?
 dotnet ef database update --project .\HelloEFCore\
 dotnet ef database drop?
 
-# Database First
+#
+# Database-First
+#
 dotnet ef dbcontext scaffold `
     "User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=postgres" `
     Npgsql.EntityFrameworkCore.PostgreSQL `
