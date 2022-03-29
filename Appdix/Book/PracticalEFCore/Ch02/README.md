@@ -16,7 +16,10 @@
 
 ## Database First(scaffold)
 ```shell
-dotnet ef dbcontext scaffold "User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=postgres" Npgsql.EntityFrameworkCore.PostgreSQL --context UsersDbContext
+dotnet ef dbcontext scaffold `
+    "User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=postgres" `
+    Npgsql.EntityFrameworkCore.PostgreSQL `
+    --context UsersDbContext
 ```
 - 참고 자료
   - https://docs.microsoft.com/ko-kr/ef/core/cli/dotnet#dotnet-ef-dbcontext-scaffold
